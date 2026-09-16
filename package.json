@@ -1,0 +1,17 @@
+{
+  "name": "landing_training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./app/src/styles/input.css -o ./app/dist/assets/main.css --watch",
+    "serve": "npx http-server . -p 8080 -c-1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
