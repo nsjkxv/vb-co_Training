@@ -103,16 +103,59 @@ h3 {
     border-radius: 0.5rem;
     padding: 1.25rem;
     color: white;
+
+    @media (min-width: 1024px) {
+        align-items: center;
+        border-top-left-radius: 1.5rem;
+        border-top-right-radius: 1.5rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
 }
 
 .employment-cards {
     display: flex;
     flex-direction: column;
-    height: 100%;
     gap: 1rem;
-    border-radius: 1rem;
-    border: 1px solid;
+    height: 100%;
+    border-radius: 1.5rem;
+    border: 1px solid rgb(28, 50, 65, 0.12);
     padding: 1.25rem;
+
+    @media (min-width: 1024px) {
+        padding: 1.875rem;
+    }
+}
+
+.employment-cards p {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color: rgb(28, 50, 65);
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-top: 1px solid rgb(28, 50, 65, 0.12);
+    padding-top: 16px;
+}
+
+.questions p {
+    font-family: 'Onest', sans-serif;
+    font-size: 0.875rem;
+    color: rgb(28, 50, 65, 0.8);
+    line-height: 1.5;
+
+    @media (min-width: 1024px) {
+        width: 85%;
+    }
+}
+
+.questions span {
+    font-weight: 400;
+
+    @media (min-width: 1024px) {
+        font-size: 1.25rem;
+        line-height: 2rem;
+        font-weight: 500;
+    }
 }
 
 .accordion {
@@ -130,9 +173,10 @@ h3 {
 }
 
 .services-list li p {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 0.875rem;
-    color: rgb(28, 50, 65, 0.5);
+    color: rgb(28, 50, 65, 0.6);
+
 }
 
 .services-list li h3 {
@@ -146,6 +190,14 @@ h3 {
     row-gap: 0.75rem;
 }
 
+.card-fade {
+    transition: opacity 300ms ease, display 300ms allow-discrete;
+
+    @starting-style {
+        opacity: 0;
+    }
+}
+
 .color-cards span {
     font-family: 'Jomhuria', Georgia, serif;
     font-size: 5rem;
@@ -157,13 +209,21 @@ h3 {
     font-weight: 500;
     font-size: 1.25rem;
     line-height: 1.6;
+
+    @media (min-width: 1024px) {
+        text-align: center;
+    }
 }
 
 .color-cards div p {
-    font-weight: 100;
+    font-weight: 200;
     font-size: 0.875rem;
     color: rgb(248, 248, 248, 0.8);
     line-height: 1.5;
+
+    @media (min-width: 1024px) {
+        text-align: center;
+    }
 }
 
 .label {
@@ -177,13 +237,11 @@ h3 {
     font-size: 1rem;
     color: #1C3241;
     font-weight: var(--font-weight-medium);
-}
 
-.questions p {
-    font-family: 'Onest', sans-serif;
-    font-size: 0.875rem;
-    color: rgb(28, 50, 65, 0.8);
-    line-height: 1.5;
+    @media (min-width: 1024px) {
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
 }
 
 input[type="radio"] {
@@ -213,4 +271,17 @@ input[type="radio"] + label::before {
 input[type="radio"]:checked + label::before {
     box-shadow: inset 0 0 0 3px #0A9A5C;
     background-color: #ffffff;
+}
+
+.rts-dec-image {
+    display: block;
+    width: 304px;
+    height: 152px;
+    flex-shrink: 0;
+    background-image: url('../../content/desktop-images/woman.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 100%;
+    max-width: 100%;
 }

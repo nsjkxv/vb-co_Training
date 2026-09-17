@@ -4,8 +4,8 @@ const line1 = document.getElementById('line1');
 const line2 = document.getElementById('line2');
 const line3 = document.getElementById('line3');
 
-const menuClosed = ['opacity-0', '-translate-y-2', 'pointer-events-none'];
-const menuOpen = ['opacity-100', 'translate-y-0', 'pointer-events-auto'];
+const menuClosed = ['opacity-0', 'max-h-0', 'pointer-events-none'];
+const menuOpen = ['opacity-100', 'max-h-[700px]', 'pointer-events-auto'];
 const line1Closed = ['w-4'];
 const line1Open = ['w-full', 'translate-y-[9px]', 'rotate-45'];
 const line3Closed = ['w-4'];
@@ -79,4 +79,80 @@ if (slider && dotsContainer) {
     }, {root: slider, threshold: 0.6});
 
     slides.forEach((slide) => sliderObserver.observe(slide));
+}
+
+const servicesTabs = document.getElementById('services-tabs');
+
+if (servicesTabs) {
+    const tabs = [...servicesTabs.querySelectorAll('[data-tab]')];
+    const panels = [...document.querySelectorAll('[data-panel]')];
+    const FADE_MS = 200;
+
+    let activeIndex = 0;
+    let isAnimating = false;
+
+    function setTabState(tab, isActive) {
+        const dot = tab.querySelector('.dot');
+        const label = tab.querySelector('.tab-label');
+        tab.setAttribute('aria-selected', String(isActive));
+        tab.classList.toggle('translate-x-3', isActive);
+        dot.classList.toggle('opacity-0', !isActive);
+        label.classList.toggle('border-b', isActive);
+        label.classList.toggle('border-[#1C3241]', isActive);
+        label.classList.toggle('font-medium', isActive);
+        label.classList.toggle('text-[#1C3241]', isActive);
+        label.classList.toggle('text-[#1C3241]/50', !isActive);
+    }
+
+    function activateTab(index) {
+        if (index === activeIndex || isAnimating) return;
+
+        const currentPanel = panels[activeIndex];
+        const nextPanel = panels[index];
+
+        tabs.forEach((tab, i) => setTabState(tab, i === index));
+
+        isAnimating = true;
+        currentPanel.classList.add('opacity-0');
+
+        setTimeout(() => {
+            currentPanel.classList.add('hidden');
+            nextPanel.classList.remove('hidden');
+            nextPanel.classList.add('opacity-0');
+
+            requestAnimationFrame(() => {
+                nextPanel.classList.remove('opacity-0');
+            });
+
+            activeIndex = index;
+            isAnimating = false;
+        }, FADE_MS);
+    }
+
+    tabs.forEach((tab, i) => {
+        tab.addEventListener('click', () => activateTab(i));
+    });
+}
+
+const rtsForm = document.getElementById('rts-form');
+
+if (rtsForm) {
+    const desktopQuery = window.matchMedia('(min-width: 1440px)');
+    const fields = [
+        rtsForm.querySelector('input[name="name"]'),
+        rtsForm.querySelector('input[name="phone"]'),
+        rtsForm.querySelector('input[name="email"]'),
+    ];
+
+    function updatePlaceholders() {
+        const isDesktop = desktopQuery.matches;
+        fields.forEach((field) => {
+            if (!field) return;
+            const base = field.placeholder.replace(/\*$/, '');
+            field.placeholder = isDesktop ? base : `${base}*`;
+        });
+    }
+
+    updatePlaceholders();
+    desktopQuery.addEventListener('change', updatePlaceholders);
 }
