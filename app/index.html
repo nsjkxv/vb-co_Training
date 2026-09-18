@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/app/assets/main.css">
 </head>
 <body>
-    <header id="header" class="bg-[#0A9A5C] py-4.5 relative">
+    <header id="header" class="bg-[#0A9A5C] py-4.5 relative lg:py-6">
         <div class="container relative mx-auto px-3">
 
 <!--            MOBILE MENU-->
@@ -46,6 +46,11 @@
                                 <path d="M5 8l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </summary>
+                        <ul class="flex flex-col gap-4 pb-4 text-white/70 text-[0.875rem] font-normal">
+                            <li><a href="#about_us">About Us</a></li>
+                            <li><a href="#opening">Vacancies</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
                     </details>
 
                     <details class="accordion group">
@@ -55,6 +60,20 @@
                                 <path d="M5 8l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </summary>
+                        <ul class="flex flex-col gap-4 pb-4 text-white/70 text-[0.875rem] font-normal">
+                            <li><a href="#services">Talent Recruitment</a></li>
+                            <li><a href="#services">Employer Recruitment</a></li>
+                            <li><a href="#services">Job Placement</a></li>
+                            <li><a href="#services">Job Matching</a></li>
+                            <li><a href="#services">Remote Work Coordination</a></li>
+                            <li><a href="#services">Onboarding Support</a></li>
+                            <li><a href="#services">Legal Assistance</a></li>
+                            <li><a href="#services">Legal Employment</a></li>
+                            <li><a href="#services">Visa Support</a></li>
+                            <li><a href="#services">Labor Market Consulting</a></li>
+                            <li><a href="#services">Career Transition Services</a></li>
+                            <li><a href="#services">Coaching / CV</a></li>
+                        </ul>
                     </details>
 
                     <details class="accordion group">
@@ -64,6 +83,10 @@
                                 <path d="M5 8l5 5 5-5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </summary>
+                        <ul class="flex flex-col gap-4 pb-4 text-white/70 text-[0.875rem] font-normal">
+                            <li><a href="#">Cookie policy</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                        </ul>
                     </details>
 
                 </nav>
@@ -90,7 +113,7 @@
                 </div>
 
                 <div class="flex flex-col gap-6">
-                    <a href="#" class="mt-8 block text-center bg-[#1C3241] text-white py-3.5 rounded-sm text-[1rem] font-medium">Contact Us</a>
+                    <a href="#rts" class="mt-8 block text-center bg-[#1C3241] text-white py-3.5 rounded-sm text-[1rem] font-medium">Contact Us</a>
 
                     <div class="flex items-center gap-2 text-[1rem]]">
                         <button type="button" class="text-white cursor-pointer">EN</button>
@@ -108,16 +131,16 @@
                 <nav>
                     <ul class="flex flex-row gap-x-8">
                         <li>
-                            <a href="">About Us</a>
+                            <a href="#about_us">About Us</a>
                         </li>
                         <li>
-                            <a href="">Vacancies</a>
+                            <a href="#opening">Vacancies</a>
                         </li>
                         <li>
-                            <a href="">Services</a>
+                            <a href="#services">Services</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="#rts">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -133,7 +156,7 @@
                     </a>
                 </div>
                 <div class="flex flex-row items-center justify-between gap-6">
-                    <a href="">Contact Us</a>
+                    <a href="#rts">Contact Us</a>
                     <div class="flex items-center gap-2 text-[1rem]]">
                         <button type="button" class="text-white cursor-pointer">EN</button>
                         <span class="text-white/30">|</span>
@@ -158,159 +181,30 @@
 
 <!--    HERO-->
 
-    <section id="hero" class="bg-[#0A9A5C] rounded-b-3xl py-10">
+    <section id="hero" class="bg-[#0A9A5C] rounded-b-3xl py-10 lg:pt-28.5 lg:pb-27.75">
         <div class="container mx-auto px-3">
             <div class="flex flex-col gap-8">
-                <div class="flex flex-col gap-8 lg:flex-row lg:gap-17.5">
+                <div class="flex flex-col gap-8 lg:flex-row lg:gap-8">
 
-                    <div class="flex flex-col justify-center gap-3.25 lg:flex-wrap lg:justify-start lg:gap-12">
+                    <div class="flex flex-col justify-center gap-3.25 lg:flex-1 lg:min-w-0 lg:flex-wrap lg:justify-center lg:gap-12">
                         <div class="flex flex-col gap-4">
                             <h1 class="uppercase font-normal text-white">
-                                <span class="font-Jomhuria text-[4rem] leading-10 font-extrabold lg:text-[8rem] lg:leading-20 lg:whitespace-nowrap">Employment Company</span>
-                                 <span class="font-Libre text-[2rem] leading-9.5 lg:text-[4rem] lg:leading-18">In Poland</span>
+                                <span class="font-Jomhuria text-[clamp(4rem,2.59rem+6.01vw,8rem)] leading-[0.625] font-extrabold 2xl:whitespace-nowrap">Employment Company</span><br>
+                                 <span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[1.15]">In Poland</span>
                             </h1>
                             <p class="leading-6 text-white font-light max-w-162">
                                 Connecting top professionals with leading companies in Poland and beyond.
                                 Finding the right job starts with the right partner. VB&CO is a trusted employment company in Poland helping skilled professionals and businesses connect with opportunities across Europe — quickly, legally, and with full support.
                             </p>
                         </div>
-                        <a href="#" class="hidden py-3 px-6 rounded-sm bg-[#1C3241] text-white self-start font-medium text-center text-xl lg:inline-block lg:overflow-hidden">Find a Job</a>
+                        <a href="#opening" class="hidden py-3 px-6 rounded-sm bg-[#1C3241] text-white self-start font-medium text-center text-xl lg:inline-block lg:overflow-hidden">Find a Job</a>
                     </div>
 
-                    <div class="hidden lg:flex flex-col items-center gap-10 shrink-0 sm:hidden md:hidden">
-                        <div class="grid grid-cols-4 gap-x-8">
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4939 47.6977C95.4939 21.3549 74.1167 -0.00012207 47.7467 -0.00012207C21.3767 -0.00012207 -0.000488281 21.3549 -0.000488281 47.6977C-0.000488281 74.0405 21.3767 95.3955 47.7467 95.3955C74.1167 95.3955 95.4939 74.0405 95.4939 47.6977Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4944 47.6977C95.4944 57.1314 92.6941 66.3533 87.4475 74.1971C82.201 82.041 74.7439 88.1546 66.0192 91.7647C57.2946 95.3748 47.6942 96.3194 38.4322 94.479C29.1701 92.6385 20.6624 88.0958 13.9848 81.4251C7.30728 74.7544 2.75981 66.2555 0.91747 57.003C-0.924865 47.7506 0.020688 38.1601 3.63456 29.4445C7.24843 20.7289 13.3683 13.2795 21.2203 8.03841C29.0723 2.79731 38.3037 -0.00012207 47.7472 -0.00012207H95.4944V47.6977Z" fill="#1C3241"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4944 47.6978C95.4944 21.355 74.1172 -7.62939e-06 47.7472 -7.62939e-06C21.3771 -7.62939e-06 0 21.355 0 47.6978C0 74.0406 21.3771 95.3956 47.7472 95.3956C74.1172 95.3956 95.4944 74.0406 95.4944 47.6978Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4944 47.6978C95.4944 21.355 74.1172 -7.62939e-06 47.7472 -7.62939e-06C21.3771 -7.62939e-06 0 21.355 0 47.6978C0 74.0406 21.3771 95.3956 47.7472 95.3956C74.1172 95.3956 95.4944 74.0406 95.4944 47.6978Z" fill="#1C3241"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M-0.000236511 -3.05176e-05C-0.000236511 25.3005 10.0608 49.5647 27.9694 67.4548C45.8781 85.345 70.1675 95.3956 95.4941 95.3956L95.4941 -3.05176e-05L-0.000236511 -3.05176e-05Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M-0.000236511 -7.62939e-06C-0.000236511 25.3005 10.0608 49.5647 27.9694 67.4549C45.8781 85.345 70.1675 95.3956 95.4941 95.3956L95.4941 -7.62939e-06L-0.000236511 -7.62939e-06Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M47.7467 95.3956C35.0834 95.3956 22.9387 90.3703 13.9843 81.4252C5.03 72.4802 -0.000488281 60.348 -0.000488281 47.6978L-0.000488281 0L95.4939 0V47.6978C95.4939 60.348 90.4634 72.4802 81.5091 81.4252C72.5547 90.3703 60.41 95.3956 47.7467 95.3956Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4939 95.3956C95.4939 70.0951 85.4329 45.8309 67.5242 27.9407C49.6156 10.0506 25.3262 0 -0.000488281 0L-0.000488281 95.3956L95.4939 95.3956Z" fill="#F8F8F8"/>
-                            </svg>
-                        </div>
-                        <div class="grid grid-cols-4 gap-x-8">
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4944 47.6978C95.4944 57.1315 92.6941 66.3534 87.447 74.1973C82.2005 82.0411 74.7434 88.1547 66.0188 91.7648C57.2941 95.3749 47.6937 96.3195 38.4317 94.4791C29.1697 92.6386 20.6619 88.0959 13.9844 81.4252C7.3068 74.7546 2.75932 66.2556 0.916982 57.0032C-0.925354 47.7507 0.0201998 38.1603 3.63407 29.4446C7.24794 20.729 13.3678 13.2796 21.2198 8.03852C29.0718 2.79742 38.3032 -7.62939e-06 47.7467 -7.62939e-06H95.4944V47.6978Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4944 47.6977C95.4944 21.3549 74.1172 -0.00012207 47.7472 -0.00012207C21.3771 -0.00012207 0 21.3549 0 47.6977C0 74.0405 21.3771 95.3955 47.7472 95.3955C74.1172 95.3955 95.4944 74.0405 95.4944 47.6977Z" fill="#1C3241"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M95.4944 47.6978C95.4944 57.1315 92.6941 66.3534 87.447 74.1973C82.2005 82.0411 74.7434 88.1547 66.0188 91.7648C57.2941 95.3749 47.6937 96.3195 38.4317 94.4791C29.1697 92.6386 20.6619 88.0959 13.9844 81.4252C7.3068 74.7546 2.75932 66.2556 0.916982 57.0032C-0.925354 47.7507 0.0201998 38.1603 3.63407 29.4446C7.24794 20.729 13.3678 13.2796 21.2198 8.03852C29.0718 2.79742 38.3032 -7.62939e-06 47.7467 -7.62939e-06H95.4944V47.6978Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6.79395 23.1758C9.20827 19.152 12.203 15.5048 15.6826 12.3545H15.6836L16.0186 12.7256C17.7305 11.1757 19.5612 9.74687 21.498 8.45408C23.4354 7.16093 25.4577 6.01827 27.5469 5.03123L27.333 4.57908C31.5782 2.57341 36.097 1.20484 40.7422 0.516579V0.515602L40.8154 1.01072C43.101 0.672073 45.4175 0.499983 47.7471 0.499977H53.7158V-2.28882e-05H65.6523V0.499977H77.5889V-2.28882e-05H89.5264V0.499977H94.9941V5.96189H95.4941V17.8867H94.9941V29.8105H95.4941V41.7353H94.9941V47.6972C94.9941 50.0249 94.8225 52.3403 94.4834 54.624L94.9766 54.6972C94.2874 59.3375 92.917 63.8512 90.9092 68.0918L90.458 67.8779C89.4701 69.9643 88.3264 71.9841 87.0322 73.9189L86.54 74.6396C85.3776 76.3099 84.1122 77.8975 82.7539 79.3945L83.124 79.7314C79.9703 83.207 76.3199 86.1989 72.292 88.6103L72.0361 88.1816C70.0544 89.3681 67.9802 90.4122 65.8281 91.3027L65.0186 91.6289C63.1233 92.3724 61.1882 92.9906 59.2266 93.4814L59.3486 93.9668C54.7996 95.105 50.1068 95.5669 45.4229 95.3388L45.4043 95.3379L45.4287 94.8388C43.4092 94.7397 41.3914 94.5102 39.3877 94.1504L38.5293 93.9883C36.2447 93.5343 34.0064 92.9142 31.8311 92.1367L31.6631 92.6074C27.2417 91.0272 23.0765 88.805 19.3047 86.0107L19.6025 85.6084C17.978 84.4049 16.4272 83.0942 14.9609 81.6826L14.3379 81.0713C12.6909 79.426 11.1751 77.6681 9.79883 75.8144L9.39648 76.1133C6.59887 72.3453 4.37319 68.1846 2.79102 63.7676L3.2627 63.5996C2.58137 61.6976 2.02 59.747 1.58594 57.7597L1.4082 56.9053C0.95369 54.6226 0.670023 52.3193 0.556641 50.0136L0.0576172 50.0381C-0.172773 45.3529 0.289749 40.6587 1.43066 36.1084L1.91602 36.2295C2.47748 33.9903 3.20514 31.7859 4.09668 29.6357C4.98843 27.4851 6.03438 25.4119 7.22266 23.4316L6.79395 23.1758Z" stroke="#F8F8F8" stroke-opacity="0.6" stroke-dasharray="12 12"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M47.7472 95.3956C35.0838 95.3956 22.9392 90.3703 13.9848 81.4252C5.03049 72.4802 0 60.348 0 47.6978L0 0L95.4944 0V47.6978C95.4944 60.348 90.4639 72.4802 81.5096 81.4252C72.5552 90.3703 60.4105 95.3956 47.7472 95.3956Z" fill="#1C3241"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M47.7467 -6.10352e-05C60.41 -6.10352e-05 72.5547 5.02523 81.5091 13.9703C90.4634 22.9154 95.4939 35.0475 95.4939 47.6977V95.3955L-0.000488281 95.3955V47.6977C-0.000488281 35.0475 5.03001 22.9154 13.9843 13.9703C22.9387 5.02523 35.0834 -6.10352e-05 47.7467 -6.10352e-05Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M47.747 -6.10352e-05C60.4103 -6.10352e-05 72.555 5.02523 81.5093 13.9703C90.4636 22.9154 95.4941 35.0475 95.4941 47.6977V95.3955L-0.000236511 95.3955V47.6977C-0.000236511 35.0475 5.03026 22.9154 13.9846 13.9703C22.9389 5.02523 35.0836 -6.10352e-05 47.747 -6.10352e-05Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M89.25 95.1905C85.0737 94.9173 80.9382 94.3722 76.8682 93.5636L76.9648 93.0733C72.8904 92.2638 68.8816 91.1898 64.9639 89.8614L64.8037 90.3331C60.8569 88.9949 57.002 87.3999 53.2637 85.5587L53.4834 85.1114C49.772 83.2834 46.1766 81.2111 42.7217 78.9054L42.4443 79.3214C38.9926 77.0177 35.681 74.4814 32.5332 71.7237L32.8613 71.3477C31.3072 69.9862 29.7938 68.5698 28.3232 67.1007C26.8535 65.6324 25.4365 64.121 24.0742 62.5694L23.7002 62.8985C20.9407 59.7555 18.4021 56.4495 16.0967 53.003H16.0957L16.5107 52.7247C14.2026 49.2741 12.1289 45.6825 10.2988 41.9757L9.85156 42.1974C8.00774 38.4627 6.41149 34.6111 5.07129 30.6681L5.54297 30.5079C4.21248 26.5934 3.13605 22.5878 2.3252 18.5167L1.83594 18.6143C1.02587 14.5472 0.479809 10.4147 0.206055 6.2413L0.703125 6.2081C0.578837 4.31313 0.513967 2.40968 0.503906 0.500092H5.96777V9.15527e-05H17.9053V0.500092H29.8418V9.15527e-05L41.7783 9.15527e-05V0.500092H53.7158V9.15527e-05H65.6523V0.500092H77.5889V9.15527e-05H89.5254V0.500092H94.9941V5.96201H95.4941V17.8868H94.9941V29.8106H95.4941L95.4941 41.7354H94.9941V53.6602H95.4941V65.5841H94.9941V77.5089H95.4941V89.4337H94.9941V94.8917C93.0831 94.8817 91.1777 94.8166 89.2812 94.6925L89.25 95.1905Z" stroke="#F8F8F8" stroke-opacity="0.6" stroke-dasharray="12 12"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col items-center gap-11 shrink-0 lg:hidden">
-                        <div class="grid grid-cols-4 gap-x-8">
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_416_3621)">
-                                    <path d="M70.2767 35.128C70.2767 15.7273 54.5447 0 35.1383 0C15.732 0 0 15.7273 0 35.128C0 54.5287 15.732 70.256 35.1383 70.256C54.5447 70.256 70.2767 54.5287 70.2767 35.128Z" fill="#D4C526"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_416_3621">
-                                        <rect width="70.256" height="70.2767" fill="white" transform="matrix(0 -1 1 0 0 70.256)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_416_3612)">
-                                    <path d="M70.2777 35.1279C70.2777 42.0755 68.2168 48.8672 64.3558 54.644C60.4947 60.4207 55.0069 64.9232 48.5862 67.5819C42.1655 70.2407 35.1003 70.9363 28.2842 69.5809C21.468 68.2255 15.207 64.8799 10.2928 59.9671C5.37859 55.0544 2.03199 48.7952 0.676166 41.981C-0.679655 35.1669 0.0162014 28.1038 2.67574 21.685C5.33528 15.2662 9.83904 9.77993 15.6175 5.92001C21.396 2.0601 28.1896 -0.00012207 35.1393 -0.00012207L70.2777 -0.00012207L70.2777 35.1279Z" fill="#1C3241"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_416_3612">
-                                        <rect width="70.256" height="70.2767" fill="white" transform="matrix(0 -1 1 0 0 70.2561)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_416_3621)">
-                                    <path d="M70.2767 35.128C70.2767 15.7273 54.5447 0 35.1383 0C15.732 0 0 15.7273 0 35.128C0 54.5287 15.732 70.256 35.1383 70.256C54.5447 70.256 70.2767 54.5287 70.2767 35.128Z" fill="#D4C526"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_416_3621">
-                                        <rect width="70.256" height="70.2767" fill="white" transform="matrix(0 -1 1 0 0 70.256)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M70.2767 35.128C70.2767 15.7273 54.5447 -3.05176e-05 35.1383 -3.05176e-05C15.732 -3.05176e-05 0 15.7273 0 35.128C0 54.5286 15.732 70.256 35.1383 70.256C54.5447 70.256 70.2767 54.5286 70.2767 35.128Z" fill="#1C3241"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M-0.000976563 0C-0.000976562 18.6331 7.40316 36.503 20.5826 49.6785C33.762 62.8541 51.6372 70.256 70.2757 70.256L70.2757 0L-0.000976563 0Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 -6.10352e-05C0 18.633 7.40413 36.5029 20.5836 49.6785C33.763 62.854 51.6381 70.256 70.2767 70.256L70.2767 -6.10352e-05L0 -6.10352e-05Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35.1379 70.256C25.8186 70.256 16.881 66.555 10.2913 59.9673C3.70158 53.3795 -0.000488281 44.4445 -0.000488281 35.128L-0.000488281 0L70.2762 0V35.128C70.2762 44.4445 66.5741 53.3795 59.9844 59.9673C53.3947 66.555 44.4571 70.256 35.1379 70.256Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M70.2767 70.256C70.2767 51.623 62.8725 33.7531 49.6931 20.5775C36.5137 7.40195 18.6385 0 0 0L0 70.256L70.2767 70.256Z" fill="#F8F8F8"/>
-                            </svg>
-                        </div>
-                        <div class="grid grid-cols-4 gap-x-8">
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M70.2767 35.1279C70.2767 42.0755 68.2159 48.8672 64.3548 54.644C60.4938 60.4207 55.0059 64.9232 48.5852 67.5819C42.1645 70.2407 35.0994 70.9363 28.2832 69.5809C21.467 68.2255 15.206 64.8799 10.2918 59.9671C5.37761 55.0544 2.03101 48.7952 0.675189 41.981C-0.680631 35.1669 0.0152248 28.1038 2.67476 21.685C5.3343 15.2662 9.83807 9.77993 15.6165 5.92001C21.395 2.0601 28.1886 -0.00012207 35.1383 -0.00012207L70.2767 -0.00012207L70.2767 35.1279Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M70.2767 35.128C70.2767 15.7273 54.5447 -3.05176e-05 35.1383 -3.05176e-05C15.732 -3.05176e-05 0 15.7273 0 35.128C0 54.5286 15.732 70.256 35.1383 70.256C54.5447 70.256 70.2767 54.5286 70.2767 35.128Z" fill="#1C3241"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M70.2767 35.1279C70.2767 42.0755 68.2159 48.8672 64.3548 54.644C60.4938 60.4207 55.0059 64.9232 48.5852 67.5819C42.1645 70.2407 35.0994 70.9363 28.2832 69.5809C21.467 68.2255 15.206 64.8799 10.2918 59.9671C5.37761 55.0544 2.03101 48.7952 0.675189 41.981C-0.680631 35.1669 0.0152248 28.1038 2.67476 21.685C5.3343 15.2662 9.83807 9.77993 15.6165 5.92001C21.395 2.0601 28.1886 -0.00012207 35.1383 -0.00012207L70.2767 -0.00012207L70.2767 35.1279Z" fill="#F8F8F8"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0.0419922 36.8517C-0.127549 33.4015 0.213293 29.9447 1.05273 26.5939L1.41016 26.6817C1.82333 25.0328 2.35859 23.4097 3.01465 21.8263C3.67076 20.2427 4.44021 18.7161 5.31445 17.2579L4.99902 17.0685H4.99805C6.77465 14.1052 8.98048 11.4208 11.541 9.10069V9.09972L11.7881 9.37218C13.0481 8.23051 14.3957 7.17795 15.8213 6.22569C17.2469 5.27345 18.7352 4.43204 20.2725 3.70518L20.1152 3.37218H20.1143C23.2383 1.89504 26.564 0.887921 29.9824 0.380966L30.0361 0.744247C31.7183 0.494793 33.4241 0.368271 35.1387 0.368271L39.5303 0.368271V0.000106812H48.3154V0.368271H57.0996V0.000106812H65.8848V0.368271H69.9092V4.39073H70.2764V13.173H69.9092V21.9552H70.2764V30.7374H69.9092L69.9092 35.128C69.9092 36.8422 69.7818 38.5469 69.5322 40.2286L69.8955 40.2823C69.3884 43.6999 68.38 47.0243 66.9023 50.1476L66.5703 49.9903C65.8433 51.5271 65.0013 53.0145 64.0488 54.4396C63.0962 55.8649 62.0435 57.212 60.9014 58.4718L61.1729 58.7189C58.852 61.2786 56.1663 63.4829 53.2021 65.2589L53.0137 64.9425C51.5551 65.8165 50.0284 66.5864 48.4443 67.2423C46.8603 67.8982 45.2366 68.4337 43.5869 68.8468L43.6748 69.2032C40.323 70.0424 36.8653 70.3835 33.4141 70.214L33.4326 69.8458C31.9464 69.7728 30.4609 69.605 28.9863 69.34L28.3545 69.2198C26.6731 68.8855 25.0258 68.4292 23.4248 67.8566L23.3008 68.2023C20.047 67.0384 16.9818 65.4018 14.2061 63.3439L14.4258 63.048C13.0597 62.0351 11.7642 60.9193 10.5518 59.7071C9.33952 58.4953 8.22388 57.2004 7.21094 55.8351L6.91504 56.0538C4.85922 53.2827 3.22254 50.2236 2.05859 46.9757L2.05371 46.962L2.40039 46.838C1.89912 45.4374 1.48636 44.0015 1.16699 42.5382L1.03613 41.9093C0.701626 40.2281 0.493596 38.5312 0.410156 36.8331L0.0419922 36.8517Z" stroke="#F8F8F8" stroke-opacity="0.6" stroke-width="0.735925" stroke-dasharray="8.83 8.83"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35.1383 70.256C25.8191 70.256 16.8815 66.555 10.2918 59.9673C3.70206 53.3795 0 44.4445 0 35.128L0 0L70.2767 0V35.128C70.2767 44.4445 66.5746 53.3795 59.9849 59.9673C53.3952 66.555 44.4576 70.256 35.1383 70.256Z" fill="#1C3241"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35.1385 -0.000183105C44.4578 -0.000183105 53.3954 3.7008 59.9851 10.2886C66.5748 16.8764 70.2769 25.8113 70.2769 35.1278V70.2558L0.000175476 70.2558V35.1278C0.000175476 25.8113 3.70224 16.8764 10.292 10.2886C16.8817 3.7008 25.8192 -0.000183105 35.1385 -0.000183105Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M35.1385 -0.000183105C44.4578 -0.000183105 53.3954 3.7008 59.9851 10.2886C66.5748 16.8764 70.2769 25.8113 70.2769 35.1278V70.2558L0.000175476 70.2558V35.1278C0.000175476 25.8113 3.70224 16.8764 10.292 10.2886C16.8817 3.7008 25.8192 -0.000183105 35.1385 -0.000183105Z" fill="#D4C526"/>
-                            </svg>
-                            <svg width="71" height="71" viewBox="0 0 71 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1.35041 13.7072C0.754408 10.7122 0.352601 7.66911 0.151192 4.59589L0.517403 4.57147C0.425963 3.17609 0.377345 1.77449 0.369942 0.368347H4.39143V0.000183105L13.1766 0.000183105V0.368347H21.9608V0.000183105H30.7459V0.368347H39.5301V0.000183105H48.3143V0.368347H57.0994V0.000183105H65.8836V0.368347H69.908V4.39081H70.2762L70.2762 13.173H69.908V21.9553H70.2762V30.7375H69.908V39.5187H70.2762V48.301H69.908V57.0832H70.2762V65.8654H69.908V69.8859C68.5016 69.8785 67.0996 69.8299 65.7039 69.7385L65.6805 70.1057C62.6066 69.9044 59.5628 69.5021 56.5672 68.9064L56.6385 68.5461C53.6397 67.9497 50.689 67.1584 47.8055 66.1799L47.6883 66.5275C44.7834 65.5418 41.9465 64.3662 39.1951 63.0099L39.3572 62.6808C36.6261 61.3345 33.9797 59.8087 31.4373 58.1105L31.2342 58.4162C28.6943 56.7197 26.2574 54.8522 23.9412 52.8215H23.9403L24.1824 52.5451C23.0391 51.5426 21.9255 50.4998 20.8436 49.4182C19.7617 48.3366 18.7184 47.2232 17.7156 46.0803L17.4403 46.3234C15.4091 44.0082 13.5415 41.5722 11.8446 39.0334L12.1492 38.8283C10.4506 36.2868 8.92373 33.6415 7.57697 30.9113L7.24885 31.0744C5.89216 28.3241 4.71739 25.4879 3.73127 22.5842L4.07795 22.466C3.09897 19.5832 2.30738 16.6331 1.71076 13.6349L1.35041 13.7072Z" stroke="#F8F8F8" stroke-opacity="0.6" stroke-width="0.735925" stroke-dasharray="8.83 8.83"/>
-                            </svg>
-                        </div>
-                    </div>
+                    <img src="./content/desktop-images/hero-decoration-group.svg" alt="" class="self-center shrink lg:self-auto lg:shrink-0 lg:mx-5 w-88 max-w-full h-auto lg:w-120">
                 </div>
 
                 <div>
-                    <a href="#" class="w-full inline-block py-3 rounded-sm bg-[#1C3241] text-white font-medium text-center text-xl lg:hidden lg:overflow-hidden lg:pointer-events-auto">Find a Job</a>
+                    <a href="#opening" class="w-full inline-block py-3 rounded-sm bg-[#1C3241] text-white font-medium text-center text-xl lg:hidden lg:overflow-hidden lg:pointer-events-auto">Find a Job</a>
                 </div>
 
             </div>
@@ -325,7 +219,7 @@
 
                 <div class="flex flex-col justify-center gap-4 lg:w-1/2">
                     <h2 class="font-normal uppercase">
-                        <span class="font-Jomhuria text-[4rem] text-[#1C3241] leading-10 lg:text-[5rem] lg:leading-15">Who we</span> &nbsp; <span class="font-Libre text-[2rem] leading-9.5 lg:text-[2.5rem] lg:leading-12">are</span>
+                        <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Who we</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">are</span>
                     </h2>
                     <p class="leading-6 font-normal">
                         VB&CO is a modern recruitment firm in Poland focused on providing legal and transparent employment solutions for international job seekers and local employers. With over a decade of experience in employment abroad, we understand the challenges of moving, settling, and working in a new country. Our mission is to make work in Europe without intermediaries safe, reliable, and tailored to your goals.
@@ -356,7 +250,7 @@
                 <div class="flex flex-col gap-4 w-full lg:flex-row lg:items-start lg:justify-between lg:gap-8">
                     <div class="flex flex-col justify-center gap-4">
                         <h2 class="font-regular uppercase">
-                            <span class="font-Jomhuria text-[4rem] text-[#1C3241] leading-10 lg:text-[5rem] lg:leading-15">Our</span> &nbsp; <span class="font-Libre text-[2rem] leading-9.5 lg:text-[2.5rem] lg:leading-12">Services</span>
+                            <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Our</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">Services</span>
                         </h2>
                         <p class="leading-6 font-normal">
                             At VB&CO, we do more than just connect people with jobs. We support both companies and candidates through every step of the hiring journey — from finding the right match to making sure everything’s legal and smooth.
@@ -514,7 +408,7 @@
                 <div class="flex flex-col gap-4 w-full lg:flex-row lg:items-start lg:justify-between lg:gap-8">
                     <div class="flex flex-col justify-center gap-4">
                         <h2 class="uppercase font-regular">
-                            <span class="font-Jomhuria text-[4rem] text-[#1C3241] leading-10">Why Choose</span> &nbsp; <span class="font-Libre text-[2rem] leading-9.5">VB&CO?</span>
+                            <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Why Choose</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">VB&CO?</span>
                         </h2>
                         <p class="leading-6 font-normal">
                             Looking for a reliable employment provider in Poland? Whether you’re a company hiring talent or a professional searching for your next job, here’s why VB&CO stands out:
@@ -666,7 +560,7 @@
                     <div class="flex flex-col justify-center gap-4">
 
                         <h2 class="uppercase font-regular">
-                            <span class="font-Jomhuria text-[4rem] text-[#1C3241] leading-10">Current</span> &nbsp; <span class="font-Libre text-[2rem] leading-9.5">openings</span>
+                            <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Current</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">openings</span>
                         </h2>
                         <p class="leading-6 font-normal">
                             Here are a few of the roles we’re currently hiring for. All positions come with legal contracts, employer support, and, if needed, help with relocation or visas.
@@ -787,7 +681,7 @@
             <div class="flex items-start flex-col gap-8 lg:items-center">
 
                 <h2 class="uppercase font-regular">
-                    <span class="font-Jomhuria text-[4rem] text-[#1C3241] leading-10 lg:text-[5rem] lg:leading-15">Frequently Asked</span> &nbsp; <span class="font-Libre text-[2rem] leading-9.5 lg:text-[2.5rem] lg:leading-12">Questions</span>
+                    <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Frequently Asked</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">Questions</span>
                 </h2>
 
                 <div class="divide-y divide-gray-300 w-full lg:max-w-3xl">
@@ -895,8 +789,8 @@
                         <div class="flex flex-col gap-4">
 
                             <h2 class="uppercase font-regular">
-                            <span class="font-Jomhuria text-[4rem] leading-10 min-[1440px]:text-[8.5rem] min-[1440px]:leading-auto 2xl:whitespace-nowrap">Ready to start</span><br>
-                            &nbsp;<span class="font-Libre text-[2rem] leading-9.5 text-white min-[1440px]:text-[4rem] min-[1440px]:leading-28">your career?</span>
+                            <span class="font-Jomhuria text-[clamp(4rem,2.42rem+6.76vw,8.5rem)] leading-[0.625] 2xl:whitespace-nowrap">Ready to start</span><br>
+                            &nbsp;<span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[clamp(2.375rem,0.75rem+6.95vw,7rem)] text-white">your career?</span>
                             </h2>
 
                             <p class="leading-6 text-[1rem]">
@@ -1080,9 +974,9 @@
 
 <!--            DESKTOP FOOTER-MENU -->
 
-            <div class="hidden lg:flex lg:justify-between lg:items-start lg:gap-59 lg:shrink-0">
+            <div class="hidden lg:flex lg:justify-between lg:items-start lg:shrink-0">
                 <div class="flex gap-16">
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 lg:w-full">
                         <span class="text-white font-medium">Home</span>
                         <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap">
                             <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
@@ -1122,7 +1016,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-6 text-[1rem] font-normal">
+                <div class="flex flex-col gap-6 text-[1rem] font-normal lg:w-77.5">
                     <div class="flex flex-col gap-3">
                         <div class="text-white/50">Phone</div>
                         <a href="tel:+48532018009" class="block text-white font-medium text-xl">+48 532 018 009</a>

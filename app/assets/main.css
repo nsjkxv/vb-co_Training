@@ -279,9 +279,6 @@
   .flex {
     display: flex;
   }
-  .grid {
-    display: grid;
-  }
   .hidden {
     display: none;
   }
@@ -351,6 +348,9 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-88 {
+    width: calc(var(--spacing) * 88);
+  }
   .w-auto {
     width: auto;
   }
@@ -360,11 +360,17 @@
   .max-w-162 {
     max-width: calc(var(--spacing) * 162);
   }
+  .max-w-full {
+    max-width: 100%;
+  }
   .min-w-0 {
     min-width: 0px;
   }
   .flex-1 {
     flex: 1;
+  }
+  .shrink {
+    flex-shrink: 1;
   }
   .shrink-0 {
     flex-shrink: 0;
@@ -407,9 +413,6 @@
   }
   .list-none {
     list-style-type: none;
-  }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   .flex-col {
     flex-direction: column;
@@ -459,12 +462,6 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
-  .gap-10 {
-    gap: calc(var(--spacing) * 10);
-  }
-  .gap-11 {
-    gap: calc(var(--spacing) * 11);
-  }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
   }
@@ -489,6 +486,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-white) 15%, transparent);
     }
+  }
+  .self-center {
+    align-self: center;
   }
   .self-start {
     align-self: flex-start;
@@ -660,11 +660,20 @@
   .text-\[1rem\] {
     font-size: 1rem;
   }
-  .text-\[2rem\] {
-    font-size: 2rem;
+  .text-\[clamp\(2rem\,1\.30rem\+3\.00vw\,4rem\)\] {
+    font-size: clamp(2rem, 1.30rem + 3.00vw, 4rem);
   }
-  .text-\[4rem\] {
-    font-size: 4rem;
+  .text-\[clamp\(2rem\,1\.82rem\+0\.75vw\,2\.5rem\)\] {
+    font-size: clamp(2rem, 1.82rem + 0.75vw, 2.5rem);
+  }
+  .text-\[clamp\(4rem\,2\.42rem\+6\.76vw\,8\.5rem\)\] {
+    font-size: clamp(4rem, 2.42rem + 6.76vw, 8.5rem);
+  }
+  .text-\[clamp\(4rem\,2\.59rem\+6\.01vw\,8rem\)\] {
+    font-size: clamp(4rem, 2.59rem + 6.01vw, 8rem);
+  }
+  .text-\[clamp\(4rem\,3\.65rem\+1\.50vw\,5rem\)\] {
+    font-size: clamp(4rem, 3.65rem + 1.50vw, 5rem);
   }
   .leading-5 {
     --tw-leading: calc(var(--spacing) * 5);
@@ -678,13 +687,25 @@
     --tw-leading: calc(var(--spacing) * 8);
     line-height: calc(var(--spacing) * 8);
   }
-  .leading-9\.5 {
-    --tw-leading: calc(var(--spacing) * 9.5);
-    line-height: calc(var(--spacing) * 9.5);
+  .leading-\[0\.625\] {
+    --tw-leading: 0.625;
+    line-height: 0.625;
   }
-  .leading-10 {
-    --tw-leading: calc(var(--spacing) * 10);
-    line-height: calc(var(--spacing) * 10);
+  .leading-\[1\.15\] {
+    --tw-leading: 1.15;
+    line-height: 1.15;
+  }
+  .leading-\[clamp\(2\.5rem\,2\.06rem\+1\.88vw\,3\.75rem\)\] {
+    --tw-leading: clamp(2.5rem, 2.06rem + 1.88vw, 3.75rem);
+    line-height: clamp(2.5rem, 2.06rem + 1.88vw, 3.75rem);
+  }
+  .leading-\[clamp\(2\.375rem\,0\.75rem\+6\.95vw\,7rem\)\] {
+    --tw-leading: clamp(2.375rem, 0.75rem + 6.95vw, 7rem);
+    line-height: clamp(2.375rem, 0.75rem + 6.95vw, 7rem);
+  }
+  .leading-\[clamp\(2\.375rem\,2\.155rem\+0\.94vw\,3rem\)\] {
+    --tw-leading: clamp(2.375rem, 2.155rem + 0.94vw, 3rem);
+    line-height: clamp(2.375rem, 2.155rem + 0.94vw, 3rem);
   }
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
@@ -898,21 +919,8 @@
       font-size: var(--text-lg);
       line-height: var(--tw-leading, var(--text-lg--line-height));
     }
-    .min-\[1440px\]\:text-\[4rem\] {
-      font-size: 4rem;
-    }
-    .min-\[1440px\]\:text-\[8\.5rem\] {
-      font-size: 8.5rem;
-    }
-    .min-\[1440px\]\:leading-28 {
-      --tw-leading: calc(var(--spacing) * 28);
-      line-height: calc(var(--spacing) * 28);
-    }
   }
   @media (width >= 40rem) {
-    .sm\:hidden {
-      display: none;
-    }
     .sm\:flex-row {
       flex-direction: row;
     }
@@ -921,11 +929,6 @@
     }
     .sm\:justify-between {
       justify-content: space-between;
-    }
-  }
-  @media (width >= 48rem) {
-    .md\:hidden {
-      display: none;
     }
   }
   @media (width >= 64rem) {
@@ -949,6 +952,9 @@
     }
     .lg\:left-1\/2 {
       left: calc(1 / 2 * 100%);
+    }
+    .lg\:mx-5 {
+      margin-inline: calc(var(--spacing) * 5);
     }
     .lg\:mx-\[-50vw\] {
       margin-inline: -50vw;
@@ -995,6 +1001,12 @@
     .lg\:w-2\/3 {
       width: calc(2 / 3 * 100%);
     }
+    .lg\:w-77\.5 {
+      width: calc(var(--spacing) * 77.5);
+    }
+    .lg\:w-120 {
+      width: calc(var(--spacing) * 120);
+    }
     .lg\:w-full {
       width: 100%;
     }
@@ -1003,6 +1015,9 @@
     }
     .lg\:max-w-3xl {
       max-width: var(--container-3xl);
+    }
+    .lg\:min-w-0 {
+      min-width: 0px;
     }
     .lg\:flex-1 {
       flex: 1;
@@ -1048,8 +1063,8 @@
     .lg\:justify-between {
       justify-content: space-between;
     }
-    .lg\:justify-start {
-      justify-content: flex-start;
+    .lg\:justify-center {
+      justify-content: center;
     }
     .lg\:gap-0 {
       gap: 0px;
@@ -1063,14 +1078,11 @@
     .lg\:gap-12 {
       gap: calc(var(--spacing) * 12);
     }
-    .lg\:gap-17\.5 {
-      gap: calc(var(--spacing) * 17.5);
-    }
     .lg\:gap-30 {
       gap: calc(var(--spacing) * 30);
     }
-    .lg\:gap-59 {
-      gap: calc(var(--spacing) * 59);
+    .lg\:self-auto {
+      align-self: auto;
     }
     .lg\:self-start {
       align-self: flex-start;
@@ -1098,6 +1110,9 @@
     .lg\:border-\[\#1C3241\]\/20 {
       border-color: color-mix(in oklab, #1C3241 20%, transparent);
     }
+    .lg\:py-6 {
+      padding-block: calc(var(--spacing) * 6);
+    }
     .lg\:py-16 {
       padding-block: calc(var(--spacing) * 16);
     }
@@ -1110,11 +1125,17 @@
     .lg\:pt-20 {
       padding-top: calc(var(--spacing) * 20);
     }
+    .lg\:pt-28\.5 {
+      padding-top: calc(var(--spacing) * 28.5);
+    }
     .lg\:pr-16 {
       padding-right: calc(var(--spacing) * 16);
     }
     .lg\:pb-0 {
       padding-bottom: 0px;
+    }
+    .lg\:pb-27\.75 {
+      padding-bottom: calc(var(--spacing) * 27.75);
     }
     .lg\:pl-16 {
       padding-left: calc(var(--spacing) * 16);
@@ -1125,37 +1146,6 @@
     .lg\:text-2xl {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-    .lg\:text-\[2\.5rem\] {
-      font-size: 2.5rem;
-    }
-    .lg\:text-\[4rem\] {
-      font-size: 4rem;
-    }
-    .lg\:text-\[5rem\] {
-      font-size: 5rem;
-    }
-    .lg\:text-\[8rem\] {
-      font-size: 8rem;
-    }
-    .lg\:leading-12 {
-      --tw-leading: calc(var(--spacing) * 12);
-      line-height: calc(var(--spacing) * 12);
-    }
-    .lg\:leading-15 {
-      --tw-leading: calc(var(--spacing) * 15);
-      line-height: calc(var(--spacing) * 15);
-    }
-    .lg\:leading-18 {
-      --tw-leading: calc(var(--spacing) * 18);
-      line-height: calc(var(--spacing) * 18);
-    }
-    .lg\:leading-20 {
-      --tw-leading: calc(var(--spacing) * 20);
-      line-height: calc(var(--spacing) * 20);
-    }
-    .lg\:whitespace-nowrap {
-      white-space: nowrap;
     }
     .lg\:opacity-0 {
       opacity: 0%;
@@ -1205,56 +1195,56 @@
 }
 @font-face {
   font-family: 'Jomhuria';
-  src: url('../../content/fonts/Jomhuria-Regular.woff2') format('woff2');
+  src: url('../content/fonts/Jomhuria-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Libre Bodoni';
-  src: url('../../content/fonts/LibreBodoni-Italic.woff2') format('woff2');
+  src: url('../content/fonts/LibreBodoni-Italic.woff2') format('woff2');
   font-weight: 400 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: 'Libre Bodoni';
-  src: url('../../content/fonts/LibreBodoni-Regular.woff2') format('woff2');
+  src: url('../content/fonts/LibreBodoni-Regular.woff2') format('woff2');
   font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Onest';
-  src: url("../../content/fonts/Onest-Thin.woff2") format('woff2');
+  src: url("../content/fonts/Onest-Thin.woff2") format('woff2');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Onest';
-  src: url("../../content/fonts/Onest-ExtraLight.woff2") format('woff2');
+  src: url("../content/fonts/Onest-ExtraLight.woff2") format('woff2');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Onest';
-  src: url("../../content/fonts/Onest-Regular.woff2") format('woff2');
+  src: url("../content/fonts/Onest-Regular.woff2") format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Onest';
-  src: url("../../content/fonts/Onest-Medium.woff2") format('woff2');
+  src: url("../content/fonts/Onest-Medium.woff2") format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Onest';
-  src: url("../../content/fonts/Onest-SemiBold.woff2") format('woff2');
+  src: url("../content/fonts/Onest-SemiBold.woff2") format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -1276,6 +1266,16 @@
 }
 p {
   font-family: 'Onest', serif;
+}
+@media (min-width: 80rem) {
+  .container {
+    max-width: 81rem;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
 }
 h3 {
   line-height: 1.6;
@@ -1432,7 +1432,7 @@ input[type="radio"]:checked + label::before {
   width: 304px;
   height: 152px;
   flex-shrink: 0;
-  background-image: url('../../content/desktop-images/woman.png');
+  background-image: url('../content/desktop-images/woman.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Jomhuria';
-    src: url('../../content/fonts/Jomhuria-Regular.woff2') format('woff2');
+    src: url('../content/fonts/Jomhuria-Regular.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'Libre Bodoni';
-    src: url('../../content/fonts/LibreBodoni-Italic.woff2') format('woff2');
+    src: url('../content/fonts/LibreBodoni-Italic.woff2') format('woff2');
     font-weight: 400 700;
     font-style: italic;
     font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'Libre Bodoni';
-    src: url('../../content/fonts/LibreBodoni-Regular.woff2') format('woff2');
+    src: url('../content/fonts/LibreBodoni-Regular.woff2') format('woff2');
     font-weight: 400 700;
     font-style: normal;
     font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: 'Onest';
-    src: url("../../content/fonts/Onest-Thin.woff2") format('woff2');
+    src: url("../content/fonts/Onest-Thin.woff2") format('woff2');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: 'Onest';
-    src: url("../../content/fonts/Onest-ExtraLight.woff2") format('woff2');
+    src: url("../content/fonts/Onest-ExtraLight.woff2") format('woff2');
     font-weight: 200;
     font-style: normal;
     font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
     font-family: 'Onest';
-    src: url("../../content/fonts/Onest-Regular.woff2") format('woff2');
+    src: url("../content/fonts/Onest-Regular.woff2") format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
     font-family: 'Onest';
-    src: url("../../content/fonts/Onest-Medium.woff2") format('woff2');
+    src: url("../content/fonts/Onest-Medium.woff2") format('woff2');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -58,7 +58,7 @@
 
 @font-face {
     font-family: 'Onest';
-    src: url("../../content/fonts/Onest-SemiBold.woff2") format('woff2');
+    src: url("../content/fonts/Onest-SemiBold.woff2") format('woff2');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -90,6 +90,18 @@
 
 p {
     font-family: 'Onest', serif;
+}
+
+@media (min-width: 80rem) {
+    .container {
+        max-width: 81rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
 }
 
 h3 {
@@ -278,7 +290,7 @@ input[type="radio"]:checked + label::before {
     width: 304px;
     height: 152px;
     flex-shrink: 0;
-    background-image: url('../../content/desktop-images/woman.png');
+    background-image: url('../content/desktop-images/woman.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
