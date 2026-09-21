@@ -81,16 +81,13 @@
         font-family: 'Onest', serif;
         color: #1C3241;
         font-size: 16px;
-        font-weight: 100;
+        font-weight: 200;
         margin: 0;
         padding: 0;
         line-height: 1.5;
     }
 }
 
-p {
-    font-family: 'Onest', serif;
-}
 
 @media (min-width: 80rem) {
     .container {
@@ -108,13 +105,34 @@ h3 {
     line-height: 1.6;
 }
 
+.hero-decor-image {
+    display: block;
+    margin: 0 auto;
+    background-image: url('../content/desktop-images/who-we-are-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    aspect-ratio: 638 / 450;
+    height: auto;
+
+    @media (min-width: 1024px) {
+        width: 638px;
+        min-width: 450px;
+    }
+
+    @media (min-width: 1440px) {
+        flex-shrink: 0;
+    }
+}
+
 .color-cards {
     display: flex;
     flex-direction: column;
     align-items: start;
     border-radius: 0.5rem;
     padding: 1.25rem;
-    color: white;
+    color: rgb(248, 248, 248, 0.8);
 
     @media (min-width: 1024px) {
         align-items: center;
@@ -122,6 +140,7 @@ h3 {
         border-top-right-radius: 1.5rem;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        color: #f8f8f8;
     }
 }
 
@@ -139,12 +158,17 @@ h3 {
     }
 }
 
+.employment-cards h3 {
+    line-height: 2rem;
+    align-self: center;
+}
+
 .employment-cards p {
     font-size: 0.875rem;
     font-weight: 300;
     color: rgb(28, 50, 65);
     line-height: 1.25rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-top: 1px solid rgb(28, 50, 65, 0.12);
     padding-top: 16px;
 }
@@ -157,6 +181,8 @@ h3 {
 
     @media (min-width: 1024px) {
         width: 85%;
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -164,7 +190,7 @@ h3 {
     font-weight: 400;
 
     @media (min-width: 1024px) {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         line-height: 2rem;
         font-weight: 500;
     }
@@ -212,7 +238,7 @@ h3 {
 
 .color-cards span {
     font-family: 'Jomhuria', Georgia, serif;
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 200;
     line-height: 60px;
 }
@@ -220,7 +246,7 @@ h3 {
 .color-cards div h3 {
     font-weight: 500;
     font-size: 1.25rem;
-    line-height: 1.6;
+    line-height: 1.75rem;
 
     @media (min-width: 1024px) {
         text-align: center;
@@ -229,9 +255,6 @@ h3 {
 
 .color-cards div p {
     font-weight: 200;
-    font-size: 0.875rem;
-    color: rgb(248, 248, 248, 0.8);
-    line-height: 1.5;
 
     @media (min-width: 1024px) {
         text-align: center;

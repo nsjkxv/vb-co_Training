@@ -166,15 +166,6 @@
             </div>
         </div>
 
-<!--        <div>-->
-<!--            <nav aria-label="breadcrumb" class="py-6">-->
-<!--                <ol class="flex items-center gap-2 text-lg text-white/40">-->
-<!--                    <li><a href="index.html" class="hover:text-white">Home</a></li>-->
-<!--                    <li aria-hidden="true">/</li>-->
-<!--                    <li class="text-white" aria-current="page">About Us</li>-->
-<!--                </ol>-->
-<!--            </nav>-->
-<!--        </div>-->
     </header>
 
 <main>
@@ -184,13 +175,13 @@
     <section id="hero" class="bg-[#0A9A5C] rounded-b-3xl py-10 lg:pt-28.5 lg:pb-27.75">
         <div class="container mx-auto px-3">
             <div class="flex flex-col gap-8">
-                <div class="flex flex-col gap-8 lg:flex-row lg:gap-8">
+                <div class="flex flex-col gap-8 lg:flex-row lg:gap-17.5">
 
                     <div class="flex flex-col justify-center gap-3.25 lg:flex-1 lg:min-w-0 lg:flex-wrap lg:justify-center lg:gap-12">
                         <div class="flex flex-col gap-4">
                             <h1 class="uppercase font-normal text-white">
                                 <span class="font-Jomhuria text-[clamp(4rem,2.59rem+6.01vw,8rem)] leading-[0.625] font-extrabold 2xl:whitespace-nowrap">Employment Company</span><br>
-                                 <span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[1.15]">In Poland</span>
+                                <span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[1.15]">In Poland</span>
                             </h1>
                             <p class="leading-6 text-white font-light max-w-162">
                                 Connecting top professionals with leading companies in Poland and beyond.
@@ -200,7 +191,8 @@
                         <a href="#opening" class="hidden py-3 px-6 rounded-sm bg-[#1C3241] text-white self-start font-medium text-center text-xl lg:inline-block lg:overflow-hidden">Find a Job</a>
                     </div>
 
-                    <img src="./content/desktop-images/hero-decoration-group.svg" alt="" class="self-center shrink lg:self-auto lg:shrink-0 lg:mx-5 w-88 max-w-full h-auto lg:w-120">
+                    <img src="./content/desktop-images/hero-decoration-group.svg" alt="" class="self-center shrink lg:self-auto lg:shrink-0 w-88 max-w-full h-auto lg:w-112.5">
+
                 </div>
 
                 <div>
@@ -215,27 +207,26 @@
 
     <section id="about_us" class="py-15 lg:py-25">
         <div class="container mx-auto px-3">
-            <div class="flex flex-col gap-8 lg:flex-row-reverse lg:gap-30">
+            <div class="flex flex-col gap-8 lg:flex-row-reverse lg:items-center md:justify-between min-[1440px]:gap-32.5">
 
-                <div class="flex flex-col justify-center gap-4 lg:w-1/2">
+                <div class="flex flex-col justify-center gap-6">
                     <h2 class="font-normal uppercase">
                         <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Who we</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">are</span>
                     </h2>
-                    <p class="leading-6 font-normal">
-                        VB&CO is a modern recruitment firm in Poland focused on providing legal and transparent employment solutions for international job seekers and local employers. With over a decade of experience in employment abroad, we understand the challenges of moving, settling, and working in a new country. Our mission is to make work in Europe without intermediaries safe, reliable, and tailored to your goals.
-                    </p>
-                    <p class="leading-6 font-normal">
-                        We specialize in international recruitment, particularly in high-demand sectors like IT, manufacturing, logistics, and healthcare. Whether you're an IT specialist looking to work in Poland, or a company looking to scale your team, VB&CO bridges the gap between talent
-                    </p>
+                    <div class="flex flex-col gap-4">
+                        <p class="leading-6 font-extralight">
+                            VB&CO is a modern recruitment firm in Poland focused on providing legal and transparent employment solutions for international job seekers and local employers. With over a decade of experience in employment abroad, we understand the challenges of moving, settling, and working in a new country. Our mission is to make work in Europe without intermediaries safe, reliable, and tailored to your goals.
+                        </p>
+                        <p class="leading-6.5 font-extralight">
+                            We specialize in international recruitment, particularly in high-demand sectors like IT, manufacturing, logistics, and healthcare. Whether you're an IT specialist looking to work in Poland, or a company looking to scale your team, VB&CO bridges the gap between talent
+                        </p>
+                    </div>
                     <a href="#" class="hidden py-2 border-b self-start text-xl font-medium lg:inline-block">More about us</a>
                 </div>
 
                 <a href="#" class="py-2 border-b self-start text-xl font-medium lg:hidden">More about us</a>
 
-                <picture class="lg:w-1/2">
-                    <source media="(min-width: 1024px)" srcset="./content/desktop-images/who_we_are_desktop.png">
-                    <img src="./content/images/who_we_are.png" alt="" class="w-full h-auto">
-                </picture>
+                <div class="hero-decor-image"></div>
 
             </div>
         </div>
@@ -245,14 +236,14 @@
 
     <section id="services" class="py-15 lg:py-20">
         <div class="container mx-auto px-3">
-            <div class="flex items-start flex-col gap-8">
+            <div class="flex items-start flex-col gap-8 lg:gap-16">
 
                 <div class="flex flex-col gap-4 w-full lg:flex-row lg:items-start lg:justify-between lg:gap-8">
                     <div class="flex flex-col justify-center gap-4">
                         <h2 class="font-regular uppercase">
                             <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Our</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">Services</span>
                         </h2>
-                        <p class="leading-6 font-normal">
+                        <p class="leading-6 font-extralight">
                             At VB&CO, we do more than just connect people with jobs. We support both companies and candidates through every step of the hiring journey — from finding the right match to making sure everything’s legal and smooth.
                         </p>
                     </div>
@@ -262,7 +253,7 @@
 
                 <div class="w-full lg:flex lg:flex-row">
 
-                    <div class="w-full lg:hidden">
+                    <div class="w-full mb-8 lg:hidden">
                         <details class="accordion group border rounded-sm overflow-hidden w-full z-10">
 
                             <summary class="flex justify-between gap-4 px-3 py-3 cursor-pointer list-none font-medium">
@@ -283,7 +274,7 @@
                         </details>
                     </div>
 
-                    <ul id="services-tabs" role="tablist" class="hidden lg:flex lg:flex-col lg:pr-16 lg:shrink-0 lg:self-start lg:gap-12 lg:text-2xl">
+                    <ul id="services-tabs" role="tablist" class="hidden lg:flex lg:flex-col lg:mr-16 lg:shrink-0 lg:self-start lg:gap-12 lg:text-2xl">
 
                         <li role="presentation">
                             <button type="button" role="tab" aria-selected="true" data-tab="0" class="tab-btn group flex w-full translate-x-3 cursor-pointer items-center gap-2 text-left transition-transform duration-200">
@@ -322,21 +313,21 @@
 
                     </ul>
 
-                    <div class="lg:w-2/3 lg:border-l lg:border-[#1C3241]/20 lg:pl-16">
-                        <ul class="services-list flex flex-col z-5 transition-opacity duration-200" data-panel="0">
-                            <li class="lg:mb-8">
+                    <div class="lg:border-l lg:border-[#1C3241]/20 lg:pl-16 lg:grid">
+                        <ul class="services-list flex flex-col z-5 transition-opacity duration-200 lg:[grid-area:1/1]" data-panel="0">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Talent Sourcing</h3>
                                 <p>We help companies find skilled people by building strong talent pools tailored to their industry and needs.</p>
                             </li>
-                            <li class="lg:mb-8">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Talent Recruitment</h3>
                                 <p>From screening to interviews — we manage the full hiring process so employers can focus on growing their business.</p>
                             </li>
-                            <li class="lg:mb-8">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Employer Recruitment</h3>
                                 <p>Need to expand your team? We create custom recruitment strategies to help you find the right people quickly.</p>
                             </li>
-                            <li class="lg:mb-8">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Job Placement</h3>
                                 <p>Looking for a job? We’ll help you find one that matches your skills, experience, and goals.</p>
                             </li>
@@ -346,8 +337,8 @@
                             </li>
                         </ul>
 
-                        <ul class="services-list hidden flex-col gap-8 z-5 opacity-0 transition-opacity duration-200" data-panel="1">
-                            <li class="lg:mb-8">
+                        <ul class="services-list hidden lg:flex flex-col gap-8 z-5 opacity-0 lg:pointer-events-none transition-opacity duration-200 lg:[grid-area:1/1]" data-panel="1">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Remote Work Coordination</h3>
                                 <p>Hiring remotely? We’ll help you organize everything — from time zones to team integration.</p>
                             </li>
@@ -357,12 +348,12 @@
                             </li>
                         </ul>
 
-                        <ul class="services-list hidden flex-col gap-6 z-5 opacity-0 transition-opacity duration-200" data-panel="2">
-                            <li class="lg:mb-8">
+                        <ul class="services-list hidden lg:flex flex-col gap-6 z-5 opacity-0 lg:pointer-events-none transition-opacity duration-200 lg:[grid-area:1/1]" data-panel="2">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Legal Assistance</h3>
                                 <p>We take care of the paperwork — contracts, permits, and everything else you need to stay compliant with Polish law.</p>
                             </li>
-                            <li class="lg:mb-8">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Legal Employment</h3>
                                 <p>All jobs we offer are 100% legal, with proper contracts and protections. No risks, no shortcuts.</p>
                             </li>
@@ -372,12 +363,12 @@
                             </li>
                         </ul>
 
-                        <ul class="services-list hidden flex-col gap-6 z-5 opacity-0 transition-opacity duration-200" data-panel="3">
-                            <li class="lg:mb-8">
+                        <ul class="services-list hidden lg:flex flex-col gap-6 z-5 opacity-0 lg:pointer-events-none transition-opacity duration-200 lg:[grid-area:1/1]" data-panel="3">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Labor Market Consulting</h3>
                                 <p>We help employers understand the current job market and make smart, informed hiring decisions.</p>
                             </li>
-                            <li class="lg:mb-8">
+                            <li class="mb-6 lg:mb-8">
                                 <h3>Career Transition Services</h3>
                                 <p>Thinking of switching careers or moving to Poland? We’re here to support your journey and make the transition easier.</p>
                             </li>
@@ -387,7 +378,7 @@
                             </li>
                         </ul>
 
-                        <ul class="services-list hidden flex-col gap-6 z-5 opacity-0 transition-opacity duration-200" data-panel="4">
+                        <ul class="services-list hidden lg:flex flex-col gap-6 z-5 opacity-0 lg:pointer-events-none transition-opacity duration-200 lg:[grid-area:1/1]" data-panel="4">
                             <li>
                                 <p>Whether you’re looking to work in Poland or hire talent from abroad, we make cross-border employment simple, legal, and efficient. We take care of the logistics so you can focus on growth.</p>
                             </li>
@@ -410,7 +401,7 @@
                         <h2 class="uppercase font-regular">
                             <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Why Choose</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">VB&CO?</span>
                         </h2>
-                        <p class="leading-6 font-normal">
+                        <p class="leading-6 font-extralight">
                             Looking for a reliable employment provider in Poland? Whether you’re a company hiring talent or a professional searching for your next job, here’s why VB&CO stands out:
                         </p>
                     </div>
@@ -421,7 +412,7 @@
 
                     <div class="color-cards group bg-[#0A9A5C] lg:flex-1 lg:h-112 lg:overflow-hidden lg:transition-[height] lg:duration-300 lg:ease-in-out lg:hover:h-124.5">
                         <span>01</span>
-                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-5">
+                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-8">
                             <h3>
                                 Hire faster
                             </h3>
@@ -429,7 +420,7 @@
                                 <p class="card-fade lg:[grid-area:1/1] lg:hidden lg:opacity-0 lg:group-hover:block lg:group-hover:opacity-100 lg:text-center leading-5">
                                     We help companies fill positions quickly and efficiently — saving time without compromising on quality. Our team is experienced in fast, reliable talent recruitment both locally and for employment abroad.
                                 </p>
-                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-16 w-16 items-center justify-center">
+                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-20 w-20 items-center justify-center">
 
                                     <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M33.3335 23.3333L6.66683 23.3333" stroke="#F8F8F8" stroke-width="5" stroke-linecap="round"/>
@@ -446,7 +437,7 @@
 
                     <div class="color-cards group bg-[#1C3241] lg:flex-1 lg:h-88.25 lg:overflow-hidden lg:transition-[height] lg:duration-300 lg:ease-in-out lg:hover:h-124.5">
                         <span>02</span>
-                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-5">
+                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-8">
                             <h3>
                                 Legal & Safe
                             </h3>
@@ -454,7 +445,7 @@
                                 <p class="card-fade lg:[grid-area:1/1] lg:hidden lg:opacity-0 lg:group-hover:block lg:group-hover:opacity-100">
                                 We only offer legal employment — no shortcuts, no risks. All contracts, permits, and documentation meet Polish labor standards, so both employers and job seekers stay protected.
                                 </p>
-                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-16 w-16 items-center justify-center">
+                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-20 w-20 items-center justify-center">
 
                                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M35 46.6667L56.6667 46.6667" stroke="#F8F8F8" stroke-width="5" stroke-linecap="round"/>
@@ -474,7 +465,7 @@
 
                     <div class="color-cards group bg-[#D4C526] py-5 lg:flex-1 lg:h-124.5 lg:overflow-hidden lg:transition-[height] lg:duration-300 lg:ease-in-out lg:hover:h-124.5">
                         <span>03</span>
-                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-5">
+                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-8">
                             <h3>
                                 Expand<br class="hidden lg:block"> Internationally
                             </h3>
@@ -482,7 +473,7 @@
                                 <p class="card-fade lg:[grid-area:1/1] lg:hidden lg:opacity-0 lg:group-hover:block lg:group-hover:opacity-100">
                                 Whether you're an employer looking to recruit from abroad, or a candidate hoping to start a new chapter in Poland, we make international hiring and relocation easy and fully supported.
                                 </p>
-                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-16 w-16 items-center justify-center">
+                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-20 w-20 items-center justify-center">
 
                                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M23.3332 11.1262C28.2361 8.28999 33.9284 6.66675 39.9998 6.66675C58.4093 6.66675 73.3332 21.5906 73.3332 40.0001C73.3332 58.4096 58.4093 73.3334 39.9998 73.3334C21.5903 73.3334 6.6665 58.4096 6.6665 40.0001C6.6665 33.9286 8.28974 28.2363 11.1259 23.3334" stroke="#F8F8F8" stroke-width="5" stroke-linecap="round"/>
@@ -497,7 +488,7 @@
 
                     <div class="color-cards group bg-[#0A9A5C] lg:flex-1 lg:h-102.5 lg:overflow-hidden lg:transition-[height] lg:duration-300 lg:ease-in-out lg:hover:h-124.5">
                         <span>04</span>
-                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-5">
+                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-8">
                             <h3>
                                 More Flexibility
                             </h3>
@@ -505,7 +496,7 @@
                                 <p class="card-fade lg:[grid-area:1/1] lg:hidden lg:opacity-0 lg:group-hover:block lg:group-hover:opacity-100">
                                 From remote work in Poland for IT specialists to on-site roles in logistics or construction — we help match the right work format to the right person.
                                 </p>
-                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-16 w-16 items-center justify-center">
+                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-20 w-20 items-center justify-center">
 
                                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M39.9997 46.6666C36.3178 46.6666 33.333 43.6818 33.333 39.9999C33.333 36.318 36.3178 33.3333 39.9997 33.3333C43.6816 33.3333 46.6663 36.318 46.6663 39.9999C46.6663 43.6818 43.6816 46.6666 39.9997 46.6666Z" stroke="#F8F8F8" stroke-width="5"/>
@@ -526,15 +517,15 @@
 
                     <div class="color-cards group bg-[#1C3241] lg:flex-1 lg:h-75.75 lg:overflow-hidden lg:transition-[height] lg:duration-300 lg:ease-in-out lg:hover:h-124.5">
                         <span>05</span>
-                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-5">
+                        <div class="flex flex-col items-start lg:items-center gap-4 lg:gap-8">
                             <h3>
-                                Trusted by Top Employers
+                                Trusted by Top<br class="hidden lg:block">Employers
                             </h3>
                             <div class="lg:grid lg:w-full">
                                 <p class="card-fade lg:[grid-area:1/1] lg:hidden lg:opacity-0 lg:group-hover:block lg:group-hover:opacity-100">
                                 VB&CO is trusted by growing startups and established enterprises across Europe. We’re more than just an employment company in Poland — we’re a long-term recruitment partner for businesses and professionals alike.
                                 </p>
-                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-16 w-16 items-center justify-center">
+                                <div class="card-fade hidden lg:flex lg:[grid-area:1/1] lg:justify-self-center lg:opacity-100 lg:group-hover:hidden lg:group-hover:opacity-0 h-20 w-20 items-center justify-center">
 
                                 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M40 70.8333C38.6193 70.8333 37.5 71.9526 37.5 73.3333C37.5 74.714 38.6193 75.8333 40 75.8333V73.3333V70.8333ZM14.3934 69.4281L16.0543 67.5596L14.3934 69.4281ZM65.6066 69.4281L63.9457 67.5596V67.5596L65.6066 69.4281ZM26.5159 75.6125C27.8941 75.6958 29.0788 74.646 29.1621 73.2678C29.2454 71.8896 28.1957 70.7049 26.8175 70.6216L26.6667 73.117L26.5159 75.6125ZM10 40H7.5C7.5 46.2471 7.49725 52.7688 8.0625 58.2214C8.34558 60.9521 8.78003 63.5159 9.46913 65.7018C10.147 67.8522 11.148 69.8882 12.7325 71.2966L14.3934 69.4281L16.0543 67.5596C15.4421 67.0154 14.7956 65.9679 14.2378 64.1986C13.6913 62.4648 13.3019 60.2726 13.0358 57.7058C12.5027 52.5634 12.5 46.3237 12.5 40H10ZM40 73.3333V75.8333C47.0081 75.8333 52.488 75.8375 56.7557 75.3275C61.0681 74.8121 64.5227 73.7364 67.2675 71.2966L65.6066 69.4281L63.9457 67.5596C62.2971 69.025 60.0194 69.9019 56.1624 70.3628C52.2607 70.8291 47.1341 70.8333 40 70.8333V73.3333ZM26.6667 73.117L26.8175 70.6216C21.1033 70.2763 18.105 69.3824 16.0543 67.5596L14.3934 69.4281L12.7325 71.2966C16.1192 74.307 20.609 75.2555 26.5159 75.6125L26.6667 73.117ZM69.9998 41.292L67.4998 41.291C67.4973 47.3951 67.4571 53.3441 66.9081 58.2244C66.6341 60.6606 66.2427 62.7336 65.7064 64.3724C65.1599 66.0421 64.5349 67.0358 63.9457 67.5596L65.6066 69.4281L67.2675 71.2966C68.7998 69.9346 69.7841 67.9878 70.4583 65.9276C71.1427 63.8365 71.5835 61.3903 71.8768 58.7833C72.4624 53.5772 72.4973 47.3439 72.4998 41.293L69.9998 41.292Z" fill="#F8F8F8"/>
@@ -560,9 +551,9 @@
                     <div class="flex flex-col justify-center gap-4">
 
                         <h2 class="uppercase font-regular">
-                            <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Current</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">openings</span>
+                            <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Current Job</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">openings</span>
                         </h2>
-                        <p class="leading-6 font-normal">
+                        <p class="leading-6 font-extralight">
                             Here are a few of the roles we’re currently hiring for. All positions come with legal contracts, employer support, and, if needed, help with relocation or visas.
                         </p>
 
@@ -575,10 +566,10 @@
                     <li class="w-full shrink-0 snap-start">
                         <article class="employment-cards">
                             <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
-                                <h3 class="font-Onest text-2xl font-semibold text-[#1C3241] leading-8">
+                                <h3 class="font-Onest text-2xl font-semibold text-[#1C3241]">
                                     PHP Developer
                                 </h3>
-                                <dl class="flex shrink-0 gap-8">
+                                <dl class="flex shrink-0 gap-12">
                                     <div>
                                         <dt class="label">Time</dt><dd class="value">Remote</dd>
                                     </div>
@@ -601,7 +592,7 @@
                                 <h3 class="font-Onest text-2xl font-semibold text-[#1C3241]">
                                     QA Engineer (REST API)
                                 </h3>
-                                <dl class="flex shrink-0 gap-8">
+                                <dl class="flex shrink-0 gap-12">
                                     <div>
                                         <dt class="label">Time</dt><dd class="value">Remote</dd>
                                     </div>
@@ -624,7 +615,7 @@
                                 <h3 class="font-Onest text-2xl font-semibold text-[#1C3241]">
                                     Frontend Developer
                                 </h3>
-                                <dl class="flex shrink-0 gap-8">
+                                <dl class="flex shrink-0 gap-12">
                                     <div>
                                         <dt class="label">Time</dt><dd class="value">Remote</dd>
                                     </div>
@@ -647,7 +638,7 @@
                                 <h3 class="font-Onest text-2xl font-semibold text-[#1C3241]">
                                     Business/System Analyst
                                 </h3>
-                                <dl class="flex shrink-0 gap-8">
+                                <dl class="flex shrink-0 gap-12">
                                     <div>
                                         <dt class="label">Time</dt><dd class="value">Remote</dd>
                                     </div>
@@ -676,18 +667,20 @@
         </div>
     </section>
 
+<!--    QUESTIONS-->
+
     <section id="questions" class="py-15 lg:py-20">
         <div class="container mx-auto px-3">
-            <div class="flex items-start flex-col gap-8 lg:items-center">
+            <div class="flex items-start flex-col gap-8 lg:items-center lg:gap-12">
 
                 <h2 class="uppercase font-regular">
                     <span class="font-Jomhuria text-[clamp(4rem,3.65rem+1.50vw,5rem)] text-[#1C3241] leading-[clamp(2.5rem,2.06rem+1.88vw,3.75rem)]">Frequently Asked</span> &nbsp; <span class="font-Libre text-[clamp(2rem,1.82rem+0.75vw,2.5rem)] leading-[clamp(2.375rem,2.155rem+0.94vw,3rem)]">Questions</span>
                 </h2>
 
-                <div class="divide-y divide-gray-300 w-full lg:max-w-3xl">
+                <div class="divide-y divide-gray-300 w-full lg:max-w-214.5">
 
                     <details name="faq" class="questions group accordion open:pb-6" open>
-                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 gap-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 lg:pb-6 lg:group-open:pb-4 gap-4">
                             <span>What documents do I need to work legally in Poland?</span>
                             <div class="flex items-center justify-center h-9 w-9 shrink-0 rounded-sm transition-colors duration-300 group-open:bg-[#1C3241]/60">
                                 <svg class="h-6 w-6 transition-transform duration-300 group-open:rotate-180 group-open:text-white"
@@ -702,7 +695,7 @@
                     </details>
 
                     <details name="faq" class="questions group accordion open:pb-6">
-                        <summary class="flex cursor-pointer list-none items-center justify-between py-4 gap-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between py-4 lg:py-6 lg:group-open:pb-4">
                             <span>How long does the recruitment and visa process take?</span>
                             <div class="flex items-center justify-center h-9 w-9 shrink-0 rounded-sm transition-colors duration-300 group-open:bg-[#1C3241]/60">
                                 <svg class="h-6 w-6 transition-transform duration-300 group-open:rotate-180 group-open:text-white"
@@ -716,7 +709,7 @@
                     </details>
 
                     <details name="faq" class="questions group accordion open:pb-6">
-                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4 lg:py-6 lg:group-open:pb-4">
                             <span>Do I need to speak Polish to get a job?</span>
                             <div class="flex items-center justify-center h-9 w-9 shrink-0 rounded-sm transition-colors duration-300 group-open:bg-[#1C3241]/60">
                                 <svg class="h-6 w-6 transition-transform duration-300 group-open:rotate-180 group-open:text-white"
@@ -730,7 +723,7 @@
                     </details>
 
                     <details name="faq" class="questions group accordion open:pb-6">
-                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4 lg:py-6 lg:group-open:pb-4">
                             <span>Can I apply for jobs from outside of Poland?</span>
                             <div class="flex items-center justify-center h-9 w-9 shrink-0 rounded-sm transition-colors duration-300 group-open:bg-[#1C3241]/60">
                                 <svg class="h-6 w-6 transition-transform duration-300 group-open:rotate-180 group-open:text-white"
@@ -744,7 +737,7 @@
                     </details>
 
                     <details name="faq" class="questions group accordion open:pb-6">
-                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4 lg:py-6 lg:group-open:pb-4">
                             <span>Do you charge job seekers for your services?</span>
                             <div class="flex items-center justify-center h-9 w-9 shrink-0 rounded-sm transition-colors duration-300 group-open:bg-[#1C3241]/60">
                                 <svg class="h-6 w-6 transition-transform duration-300 group-open:rotate-180 group-open:text-white"
@@ -758,7 +751,7 @@
                     </details>
 
                     <details name="faq" class="questions group accordion ">
-                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4">
+                        <summary class="flex cursor-pointer list-none items-center justify-between pb-4 py-4 lg:py-6 lg:group-open:pb-4">
                             <span>What types of jobs do you offer?</span>
                             <div class="flex items-center justify-center h-9 w-9 shrink-0 rounded-sm transition-colors duration-300 group-open:bg-[#1C3241]/60">
                                 <svg class="h-6 w-6 transition-transform duration-300 group-open:rotate-180 group-open:text-white"
@@ -790,13 +783,13 @@
 
                             <h2 class="uppercase font-regular">
                             <span class="font-Jomhuria text-[clamp(4rem,2.42rem+6.76vw,8.5rem)] leading-[0.625] 2xl:whitespace-nowrap">Ready to start</span><br>
-                            &nbsp;<span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[clamp(2.375rem,0.75rem+6.95vw,7rem)] text-white">your career?</span>
+                            <span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[clamp(2.375rem,0.75rem+6.95vw,5.4rem)] text-white">your career?</span>
                             </h2>
 
-                            <p class="leading-6 text-[1rem]">
+                            <p class="leading-normal text-[1rem]">
                                 Whether you’re looking for your next job or planning to relocate for work — we’re here to help. Let VB&CO, your trusted recruitment provider in Poland, guide you through every step of the process.
                             </p>
-                            <p class="leading-6 text-[1rem]">
+                            <p class="leading-normal text-[1rem]">
                                 Contact Us Today to explore current vacancies and start your journey.
                             </p>
 
@@ -805,7 +798,7 @@
                         <div class="hidden min-[1440px]:flex">
                             <div class="rts-dec-image"></div>
 
-                            <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="152" height="152" viewBox="0 0 152 152" fill="none" class="shrink-0" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_416_11352)">
                                     <path d="M151.75 75.875C151.75 33.9704 117.78 0 75.875 0C33.9704 0 0 33.9704 0 75.875C0 117.78 33.9704 151.75 75.875 151.75C117.78 151.75 151.75 117.78 151.75 75.875Z" fill="#D4C526"/>
                                 </g>
@@ -816,7 +809,7 @@
                                 </defs>
                             </svg>
 
-                            <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="152" height="152" viewBox="0 0 152 152" fill="none" class="shrink-0" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_416_11349)">
                                     <path d="M151.75 75.875C151.75 90.8816 147.3 105.551 138.962 118.029C130.625 130.506 118.775 140.232 104.911 145.974C91.0463 151.717 75.7904 153.22 61.0721 150.292C46.3537 147.364 32.8341 140.138 22.2228 129.527C11.6115 118.915 4.38512 105.396 1.45746 90.6775C-1.47019 75.9592 0.032387 60.7032 5.77519 46.8389C11.518 32.9745 21.2431 21.1245 33.7206 12.7872C46.1982 4.45 60.8679 0 75.8745 0L151.75 0V75.875Z" fill="#1C3241"/>
                                 </g>
@@ -837,7 +830,7 @@
 
                 </div>
 
-                <form id="rts-form" class="flex flex-col gap-6 text-white min-[1440px]:gap-8 min-[1440px]:flex-1 min-[1440px]:min-w-0">
+                <form id="rts-form" class="flex flex-col gap-6 text-white min-[1440px]:gap-6 min-[1440px]:w-132 min-[1440px]:shrink-0">
                     <fieldset class="border-0 p-0 m-0 flex flex-wrap items-center gap-6 min-[1440px]:gap-8">
                         <legend class="w-full text-sm mb-4 text-white/70 min-[1440px]:text-base">You are</legend>
                         <input type="radio" id="role-job-seeker" name="role" value="job-seeker" checked>
@@ -864,7 +857,7 @@
                         </label>
                     </div>
 
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-3 min-[1440px]:gap-8">
                         <label class="flex items-start gap-3 text-[0.75rem] text-white/70">
                             <input type="checkbox" required class="checkbox-input mt-1 h-4 w-4 accent-white bg-transparent cursor-pointer shrink-0 text-white/60 font-Onest text-[0.75rem] ">
                             <span>Our website uses cookies to enhance your experience. By continuing to browse, you agree to our <span class="whitespace-nowrap"><u>privacy policy</u>.</span></span>
@@ -975,20 +968,20 @@
 <!--            DESKTOP FOOTER-MENU -->
 
             <div class="hidden lg:flex lg:justify-between lg:items-start lg:shrink-0">
-                <div class="flex gap-16">
-                    <div class="flex flex-col gap-4 lg:w-full">
+                <div class="flex gap-5">
+                    <div class="flex flex-col gap-4 lg:w-full min-[1440px]:min-w-50">
                         <span class="text-white font-medium">Home</span>
-                        <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap">
+                        <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap leading-5">
                             <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
                             <li><a href="#" class="hover:text-white transition-colors">Vacancies</a></li>
                             <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
                         </ul>
                     </div>
 
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 mr-7.5">
                         <span class="text-white font-medium">Services</span>
-                        <div class="flex gap-16">
-                            <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap">
+                        <div class="flex gap-8">
+                            <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap leading-5">
                                 <li><a href="#" class="hover:text-white transition-colors">Talent Recruitment</a></li>
                                 <li><a href="#" class="hover:text-white transition-colors">Employer Recruitment</a></li>
                                 <li><a href="#" class="hover:text-white transition-colors">Job Placement</a></li>
@@ -996,7 +989,7 @@
                                 <li><a href="#" class="hover:text-white transition-colors">Remote Work Coordination</a></li>
                                 <li><a href="#" class="hover:text-white transition-colors">Onboarding Support</a></li>
                             </ul>
-                            <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap">
+                            <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap leading-5">
                                 <li><a href="#" class="hover:text-white transition-colors">Legal Assistance</a></li>
                                 <li><a href="#" class="hover:text-white transition-colors">Legal Employment</a></li>
                                 <li><a href="#" class="hover:text-white transition-colors">Visa Support</a></li>
@@ -1009,7 +1002,7 @@
 
                     <div class="flex flex-col gap-4">
                         <span class="text-white font-medium">Legal</span>
-                        <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap">
+                        <ul class="flex flex-col gap-4 text-white/60 text-[0.875rem] whitespace-nowrap leading-5">
                             <li><a href="#" class="hover:text-white transition-colors">Cookie policy</a></li>
                             <li><a href="#" class="hover:text-white transition-colors">Privacy policy</a></li>
                         </ul>
@@ -1040,11 +1033,13 @@
                 </div>
             </div>
 
-            <div class="flex items-center justify-between text-white/40 text-[0.75rem] mt-12 lg:mt-28.5 gap-4">
-                <span class="whitespace-nowrap">Copyright &copy; 2025 VB &amp; Co SSL</span>
-                <div class="hidden lg:block flex-1 h-px bg-white/15"></div>
+            <div class="flex items-center justify-between lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] text-white/40 text-[0.75rem] mt-12 lg:mt-28.5 gap-4">
+                <div class="flex items-center gap-4">
+                    <span class="whitespace-nowrap">Copyright &copy; 2025 VB &amp; Co SSL</span>
+                    <div class="hidden lg:block flex-1 h-px bg-white/15"></div>
+                </div>
                 <a href="index.html" class="hidden lg:block shrink-0">
-                    <svg class="h-6 w-auto" viewBox="0 0 124 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="124" height="33" viewBox="0 0 124 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.24602 33L0 0.0540351H10.3075L12.7377 11.4108L15.2517 23.3299L17.6261 11.4108L20.1401 0.0540351H27.4866L19.3859 33H9.24602Z" fill="#0A9A5C"/>
                         <path d="M38.9265 27.2291C40.2487 27.2291 41.2171 26.8543 41.8316 26.1046C42.4462 25.355 42.7534 24.4648 42.7534 23.4341V21.4663C42.7534 20.2482 42.3624 19.3861 41.5802 18.8801C40.7981 18.3554 39.9135 18.093 38.9265 18.093H36.7477V27.2291H38.9265ZM42.3624 8.2261C42.3624 7.10167 42.0551 6.32393 41.4406 5.8929C40.826 5.44312 39.9415 5.21823 38.7869 5.21823H36.7477V13.3423H39.0103C40.0904 13.3423 40.9191 12.9206 41.4964 12.0773C42.0737 11.2152 42.3624 10.1658 42.3624 8.92887V8.2261ZM40.8685 33C36.4363 33 31.9618 33 27.5296 33V0.0540351C31.5694 0.0540351 35.6087 0 39.6484 0C41.2635 0.00998914 43.6889 -0.0119933 45.1569 0.138468C46.6653 0.49454 47.8467 0.964122 48.7033 1.67626C49.5599 2.38841 50.1652 3.21299 50.519 4.15002C50.8914 5.08705 51.0777 6.20212 51.0777 7.49522C51.0777 9.48172 50.6214 11.1871 49.7089 12.6114C48.7964 14.0357 47.4742 14.9259 45.7423 15.2819C50.1372 15.6755 52.3347 18.2711 52.3347 23.0687C52.3347 24.5117 52.1205 25.8235 51.6922 27.0042C51.2639 28.1661 50.6028 29.2062 49.7089 30.1245C48.8337 31.024 47.6418 31.7268 46.1334 32.2328C44.625 32.7388 43.0726 33 40.8685 33Z" fill="#0A9A5C"/>
                         <path d="M92.0427 32.9789C90.0035 32.9789 88.0901 32.5432 86.3023 31.6717C84.5425 30.7722 83.0062 29.5634 81.6933 28.0454C80.3804 26.4993 79.3469 24.7424 78.5927 22.7746C77.8664 20.8069 77.5033 18.7407 77.5033 16.5762C77.5033 14.4117 77.8803 12.3455 78.6346 10.3777C79.3888 8.40998 80.4223 6.66711 81.7352 5.14912C83.076 3.60302 84.6403 2.39425 86.428 1.52281C88.2158 0.623265 90.1292 0.17349 92.1684 0.17349C93.4813 0.17349 94.7103 0.384322 95.8556 0.805985C97.0288 1.22765 98.1462 1.88825 99.2076 2.7878L100.842 0.679487H101.889V10.2091H100.842C100.534 8.63487 100.046 7.18716 99.3752 5.86594C98.7048 4.51662 97.783 3.44841 96.6098 2.66131C95.4645 1.84609 93.9701 1.43848 92.1265 1.43848C90.9253 1.43848 89.8359 1.66337 88.8583 2.11314C87.9085 2.53481 87.0845 3.30785 86.3861 4.43229C85.6878 5.52861 85.1431 7.06066 84.752 9.02842C84.3889 10.9962 84.2073 13.5121 84.2073 16.5762C84.2073 19.6403 84.3889 22.1562 84.752 24.124C85.1152 26.0917 85.6319 27.6378 86.3023 28.7623C87.0007 29.8586 87.8247 30.6316 88.7745 31.0814C89.7521 31.5031 90.8415 31.7139 92.0427 31.7139C93.9701 31.7139 95.5483 31.3485 96.7774 30.6176C98.0065 29.8867 98.9702 28.9028 99.6685 27.6659C100.367 26.4291 100.884 25.0516 101.219 23.5336H102.266V32.4729H101.219L99.7942 30.5333C98.6769 31.3766 97.4478 31.995 96.107 32.3886C94.7662 32.7821 93.4114 32.9789 92.0427 32.9789Z" fill="#F8F8F8"/>
@@ -1052,8 +1047,10 @@
                         <path d="M68.5517 33L60.2834 19.5366C59.9295 18.9744 59.5664 18.3935 59.1939 17.7938C58.8215 17.1941 58.6353 16.4538 58.6353 15.573C58.6353 14.7671 58.8308 14.0269 59.2219 13.3522C59.6316 12.6588 60.2368 12.106 61.0376 11.6937C61.8569 11.2627 62.8719 11.0471 64.0823 11.0471C65.1065 11.0471 66.0004 11.2064 66.7639 11.525C67.5275 11.8249 68.1234 12.2559 68.5517 12.8181C68.9986 13.3616 69.2221 13.9988 69.2221 14.7297C69.2221 15.1982 69.0917 15.7135 68.831 16.2758C68.5703 16.838 68.0768 17.4002 67.3505 17.9624C66.6429 18.5246 65.6187 19.04 64.2779 19.5085L63.4957 18.8057C64.3337 18.712 65.0134 18.281 65.5349 17.5126C66.0749 16.7443 66.3449 15.8166 66.3449 14.7297C66.3449 13.8114 66.1401 13.1086 65.7304 12.6214C65.3207 12.1341 64.7341 11.8905 63.9706 11.8905C63.1884 11.8905 62.5832 12.1154 62.1549 12.5651C61.7452 12.9962 61.5404 13.5209 61.5404 14.1393C61.5404 14.6266 61.6614 15.1045 61.9035 15.573C62.1456 16.0415 62.4156 16.51 62.7136 16.9785L72.8535 33H68.5517ZM61.1772 32.9736C59.6874 32.9736 58.4118 32.7206 57.3503 32.2146C56.3075 31.7086 55.516 31.0246 54.976 30.1625C54.4359 29.3005 54.1659 28.3447 54.1659 27.2952C54.1659 26.0958 54.4825 25.0276 55.1156 24.0906C55.7488 23.1536 56.5775 22.329 57.6017 21.6168C58.6446 20.9047 59.7619 20.2863 60.9538 19.7615L61.5404 20.5205C60.1437 21.0078 59.1939 21.6637 58.6911 22.4883C58.1883 23.3129 57.9369 24.2499 57.9369 25.2994C57.9369 26.1802 58.0673 27.0048 58.328 27.7731C58.5887 28.5415 58.9518 29.2161 59.4174 29.7971C59.883 30.3593 60.4137 30.7997 61.0096 31.1183C61.6242 31.4369 62.2759 31.5962 62.965 31.5962C63.6168 31.5962 64.2872 31.4182 64.9762 31.0621C65.6838 30.706 66.4846 30.0782 67.3785 29.1787L67.993 29.7971C66.8571 31.0152 65.7397 31.8492 64.641 32.299C63.5423 32.7487 62.3877 32.9736 61.1772 32.9736ZM69.669 33V32.2972H75.0044V33H69.669ZM69.7808 28.1105L69.1383 27.3233C69.6783 26.6862 70.1439 25.9365 70.535 25.0745C70.926 24.1937 71.224 23.2754 71.4288 22.3196C71.6337 21.3451 71.7361 20.4268 71.7361 19.5647H72.6859C72.6859 20.483 72.5462 21.4763 72.2669 22.5445C72.0061 23.6127 71.6523 24.6434 71.2054 25.6367C70.7771 26.6112 70.3022 27.4358 69.7808 28.1105ZM68.412 19.8177V19.115H75.7027V19.8177H68.412Z" fill="#F8F8F8"/>
                     </svg>
                 </a>
-                <div class="hidden lg:block flex-1 h-px bg-white/15"></div>
-                <span class="whitespace-nowrap">All rights reserved</span>
+                <div class="flex items-center justify-end gap-4">
+                    <div class="hidden lg:block flex-1 h-px bg-white/15"></div>
+                    <span class="whitespace-nowrap">All rights reserved</span>
+                </div>
             </div>
 
         </div>

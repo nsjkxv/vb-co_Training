@@ -86,10 +86,8 @@ const servicesTabs = document.getElementById('services-tabs');
 if (servicesTabs) {
     const tabs = [...servicesTabs.querySelectorAll('[data-tab]')];
     const panels = [...document.querySelectorAll('[data-panel]')];
-    const FADE_MS = 200;
 
     let activeIndex = 0;
-    let isAnimating = false;
 
     function setTabState(tab, isActive) {
         const dot = tab.querySelector('.dot');
@@ -104,29 +102,20 @@ if (servicesTabs) {
         label.classList.toggle('text-[#1C3241]/50', !isActive);
     }
 
-    function activateTab(index) {
-        if (index === activeIndex || isAnimating) return;
+    function setPanelActive(panel, isActive) {
+        panel.classList.toggle('opacity-0', !isActive);
+        panel.classList.toggle('lg:pointer-events-none', !isActive);
+    }
 
-        const currentPanel = panels[activeIndex];
-        const nextPanel = panels[index];
+    function activateTab(index) {
+        if (index === activeIndex) return;
 
         tabs.forEach((tab, i) => setTabState(tab, i === index));
 
-        isAnimating = true;
-        currentPanel.classList.add('opacity-0');
+        setPanelActive(panels[activeIndex], false);
+        setPanelActive(panels[index], true);
 
-        setTimeout(() => {
-            currentPanel.classList.add('hidden');
-            nextPanel.classList.remove('hidden');
-            nextPanel.classList.add('opacity-0');
-
-            requestAnimationFrame(() => {
-                nextPanel.classList.remove('opacity-0');
-            });
-
-            activeIndex = index;
-            isAnimating = false;
-        }, FADE_MS);
+        activeIndex = index;
     }
 
     tabs.forEach((tab, i) => {
