@@ -27,6 +27,7 @@
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
+    --font-weight-extrabold: 800;
     --leading-normal: 1.5;
     --radius-sm: 0.25rem;
     --radius-3xl: 1.5rem;
@@ -681,13 +682,13 @@
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
   }
-  .leading-6\.5 {
-    --tw-leading: calc(var(--spacing) * 6.5);
-    line-height: calc(var(--spacing) * 6.5);
-  }
   .leading-\[0\.625\] {
     --tw-leading: 0.625;
     line-height: 0.625;
+  }
+  .leading-\[1\.3\] {
+    --tw-leading: 1.3;
+    line-height: 1.3;
   }
   .leading-\[1\.125\] {
     --tw-leading: 1.125;
@@ -1022,6 +1023,9 @@
     }
     .lg\:w-119\.25 {
       width: calc(var(--spacing) * 119.25);
+    }
+    .lg\:w-132 {
+      width: calc(var(--spacing) * 132);
     }
     .lg\:w-full {
       width: 100%;
