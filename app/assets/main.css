@@ -859,8 +859,8 @@
       color: #1C3241;
     }
   }
-  .open\:pb-6:is([open], :popover-open, :open) {
-    padding-bottom: calc(var(--spacing) * 6);
+  .open\:pb-4:is([open], :popover-open, :open) {
+    padding-bottom: calc(var(--spacing) * 4);
   }
   @media (hover: hover) {
     .hover\:bg-black\/5:hover {
@@ -1157,6 +1157,9 @@
     .lg\:py-25 {
       padding-block: calc(var(--spacing) * 25);
     }
+    .lg\:pt-6 {
+      padding-top: calc(var(--spacing) * 6);
+    }
     .lg\:pt-20 {
       padding-top: calc(var(--spacing) * 20);
     }
@@ -1390,7 +1393,7 @@ h3 {
   @media (min-width: 1024px) {
     font-size: 1.5rem;
     line-height: 2rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 .accordion {
