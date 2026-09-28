@@ -96,6 +96,8 @@ if (servicesTabs) {
         tab.classList.toggle('translate-x-3', isActive);
         dot.classList.toggle('opacity-0', !isActive);
         label.classList.toggle('border-b', isActive);
+        label.classList.toggle('py-2', isActive);
+        label.classList.toggle('px-1', isActive);
         label.classList.toggle('border-[#1C3241]', isActive);
         label.classList.toggle('font-medium', isActive);
         label.classList.toggle('text-[#1C3241]', isActive);

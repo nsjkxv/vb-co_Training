@@ -27,7 +27,6 @@
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
-    --font-weight-extrabold: 800;
     --leading-normal: 1.5;
     --radius-sm: 0.25rem;
     --radius-3xl: 1.5rem;
@@ -303,6 +302,9 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
+  .h-2\.25 {
+    height: calc(var(--spacing) * 2.25);
+  }
   .h-4 {
     height: calc(var(--spacing) * 4);
   }
@@ -335,6 +337,9 @@
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
+  }
+  .w-2\.25 {
+    width: calc(var(--spacing) * 2.25);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -1021,6 +1026,9 @@
     .lg\:w-77\.5 {
       width: calc(var(--spacing) * 77.5);
     }
+    .lg\:w-104\.75 {
+      width: calc(var(--spacing) * 104.75);
+    }
     .lg\:w-119\.25 {
       width: calc(var(--spacing) * 119.25);
     }
@@ -1347,7 +1355,7 @@ h3 {
   gap: 1rem;
   height: 100%;
   border-radius: 1.5rem;
-  border: 1px solid rgb(28, 50, 65, 0.12);
+  border: 1px solid rgb(28, 50, 65, 0.4);
   padding: 1.25rem;
   @media (min-width: 1024px) {
     padding: 1.875rem;
@@ -1359,7 +1367,7 @@ h3 {
 }
 .employment-cards p {
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
   color: rgb(28, 50, 65);
   line-height: 1.25rem;
   margin-bottom: 1rem;
@@ -1397,18 +1405,23 @@ h3 {
   block-size: auto;
 }
 .services-list li p {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 0.875rem;
+  line-height: 20px;
   color: rgb(28, 50, 65, 0.6);
 }
 .services-list li h3 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.25rem;
+  line-height: 26px;
 }
 .services-list li {
   display: flex;
   flex-direction: column;
   row-gap: 0.75rem;
+}
+.tab-label.py-2.px-1 {
+  padding: 0.5rem 0.25rem;
 }
 .card-fade {
   transition: opacity 300ms ease, display 300ms allow-discrete;
@@ -1439,16 +1452,17 @@ h3 {
 .label {
   font-family: 'Onest', sans-serif;
   font-size: 0.875rem;
+  line-height: 1.25rem;
   color: rgb(28, 50, 65, 0.6);
 }
 .value {
   font-family: 'Onest', sans-serif;
   font-size: 1rem;
   color: #1C3241;
-  font-weight: var(--font-weight-medium);
+  font-weight: 600;
   @media (min-width: 1024px) {
     font-size: 1.25rem;
-    line-height: 1.6;
+    line-height: 26px;
   }
 }
 input[type="radio"] {
