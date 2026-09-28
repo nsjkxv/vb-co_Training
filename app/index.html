@@ -127,7 +127,7 @@
 
 <!--            DESKTOP MENU -->
 
-            <div class="hidden flex-row items-center justify-between text-white lg:block lg:flex lg:relative">
+            <div class="hidden text-white lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-center">
                 <nav>
                     <ul class="flex flex-row gap-x-8">
                         <li>
@@ -144,7 +144,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
+                <div>
                     <a href="index.html">
                         <svg width="164" height="44" viewBox="0 0 164 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.2286 44L0 0.0720469H13.6325L16.8467 15.2144L20.1717 31.1065L23.3119 15.2144L26.6369 0.0720469H36.3533L25.6394 44H12.2286Z" fill="#F8F8F8"/>
@@ -155,8 +155,8 @@
                         </svg>
                     </a>
                 </div>
-                <div class="flex flex-row items-center justify-between gap-6">
-                    <a href="#rts">Contact Us</a>
+                <div class="flex flex-row items-center justify-end gap-6">
+                    <a href="#rts" class="px-6 py-3 bg-[#1C3241] rounded-sm">Contact Us</a>
                     <div class="flex items-center gap-2 text-[1rem]]">
                         <button type="button" class="text-white cursor-pointer">EN</button>
                         <span class="text-white/30">|</span>
@@ -174,14 +174,13 @@
 
     <section id="hero" class="bg-[#0A9A5C] rounded-b-3xl py-10 lg:pt-28.5 lg:pb-27.75">
         <div class="container mx-auto px-3">
-            <div class="flex flex-col gap-8">
                 <div class="flex flex-col gap-8 lg:flex-row lg:gap-17.5">
 
                     <div class="flex flex-col justify-center gap-3.25 lg:flex-1 lg:min-w-0 lg:flex-wrap lg:justify-center lg:gap-12">
                         <div class="flex flex-col gap-4">
                             <h1 class="uppercase font-normal text-white">
-                                <span class="font-Jomhuria text-[clamp(4rem,2.59rem+6.01vw,8rem)] leading-[0.625] font-extrabold 2xl:whitespace-nowrap">Employment Company</span><br>
-                                <span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[1.15]">In Poland</span>
+                                <span class="font-Jomhuria text-[clamp(4rem,2.59rem+6.01vw,8rem)] leading-[0.625] 2xl:whitespace-nowrap">Employment Company</span><br>
+                                <span class="font-Libre text-[clamp(2rem,1.30rem+3.00vw,4rem)] leading-[1.125]">In Poland</span>
                             </h1>
                             <p class="leading-6 text-white font-light max-w-162">
                                 Connecting top professionals with leading companies in Poland and beyond.
@@ -199,7 +198,6 @@
                     <a href="#opening" class="w-full inline-block py-3 rounded-sm bg-[#1C3241] text-white font-medium text-center text-xl lg:hidden lg:overflow-hidden lg:pointer-events-auto">Find a Job</a>
                 </div>
 
-            </div>
         </div>
     </section>
 

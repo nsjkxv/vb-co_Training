@@ -602,6 +602,9 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -693,6 +696,10 @@
   .leading-\[1\.15\] {
     --tw-leading: 1.15;
     line-height: 1.15;
+  }
+  .leading-\[1\.125\] {
+    --tw-leading: 1.125;
+    line-height: 1.125;
   }
   .leading-\[clamp\(2\.5rem\,2\.06rem\+1\.88vw\,3\.75rem\)\] {
     --tw-leading: clamp(2.5rem, 2.06rem + 1.88vw, 3.75rem);
@@ -1126,6 +1133,9 @@
     }
     .lg\:border-\[\#1C3241\]\/20 {
       border-color: color-mix(in oklab, #1C3241 20%, transparent);
+    }
+    .lg\:px-0 {
+      padding-inline: 0px;
     }
     .lg\:py-6 {
       padding-block: calc(var(--spacing) * 6);
