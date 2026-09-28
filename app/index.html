@@ -127,9 +127,9 @@
 
 <!--            DESKTOP MENU -->
 
-            <div class="hidden text-white lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-center">
-                <nav>
-                    <ul class="flex flex-row gap-x-8">
+            <div class="hidden text-white lg:flex lg:items-center lg:justify-between">
+                <nav class="shrink-0">
+                    <ul class="flex flex-row gap-x-8 whitespace-nowrap">
                         <li>
                             <a href="#about_us">About Us</a>
                         </li>
@@ -144,7 +144,7 @@
                         </li>
                     </ul>
                 </nav>
-                <div>
+                <div class="lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
                     <a href="index.html">
                         <svg width="164" height="44" viewBox="0 0 164 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.2286 44L0 0.0720469H13.6325L16.8467 15.2144L20.1717 31.1065L23.3119 15.2144L26.6369 0.0720469H36.3533L25.6394 44H12.2286Z" fill="#F8F8F8"/>
@@ -155,8 +155,8 @@
                         </svg>
                     </a>
                 </div>
-                <div class="flex flex-row items-center justify-end gap-6">
-                    <a href="#rts" class="px-6 py-3 bg-[#1C3241] rounded-sm">Contact Us</a>
+                <div class="flex flex-row items-center gap-6 shrink-0">
+                    <a href="#rts" class="px-6 py-3 bg-[#1C3241] rounded-sm text-white font-medium text-xl leading-none whitespace-nowrap shrink-0">Contact Us</a>
                     <div class="flex items-center gap-2 text-[1rem]]">
                         <button type="button" class="text-white cursor-pointer">EN</button>
                         <span class="text-white/30">|</span>
@@ -172,7 +172,7 @@
 
 <!--    HERO-->
 
-    <section id="hero" class="bg-[#0A9A5C] rounded-b-3xl py-10 lg:pt-28.5 lg:pb-27.75">
+    <section id="hero" class="bg-[#0A9A5C] rounded-b-3xl py-10 lg:pt-28.5 lg:pb-27.75 lg:rounded-b-[48px]">
         <div class="container mx-auto px-3">
                 <div class="flex flex-col gap-8 lg:flex-row lg:gap-17.5">
 
@@ -190,7 +190,7 @@
                         <a href="#opening" class="hidden py-3 px-6 rounded-sm bg-[#1C3241] text-white self-start font-medium text-center text-xl lg:inline-block lg:overflow-hidden">Find a Job</a>
                     </div>
 
-                    <img src="./content/desktop-images/hero-decoration-group.svg" alt="" class="self-center shrink lg:self-auto lg:shrink-0 w-88 max-w-full h-auto lg:w-112.5">
+                    <img src="./content/desktop-images/hero-decoration-group.svg" alt="" class="self-center shrink mb-8 lg:mb-0 lg:self-auto lg:shrink-0 w-88 max-w-full h-auto lg:w-119.25">
 
                 </div>
 

@@ -27,7 +27,6 @@
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
-    --font-weight-extrabold: 800;
     --leading-normal: 1.5;
     --radius-sm: 0.25rem;
     --radius-3xl: 1.5rem;
@@ -602,9 +601,6 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
-  .py-6 {
-    padding-block: calc(var(--spacing) * 6);
-  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -693,10 +689,6 @@
     --tw-leading: 0.625;
     line-height: 0.625;
   }
-  .leading-\[1\.15\] {
-    --tw-leading: 1.15;
-    line-height: 1.15;
-  }
   .leading-\[1\.125\] {
     --tw-leading: 1.125;
     line-height: 1.125;
@@ -713,13 +705,13 @@
     --tw-leading: clamp(2.375rem, 2.155rem + 0.94vw, 3rem);
     line-height: clamp(2.375rem, 2.155rem + 0.94vw, 3rem);
   }
+  .leading-none {
+    --tw-leading: 1;
+    line-height: 1;
+  }
   .leading-normal {
     --tw-leading: var(--leading-normal);
     line-height: var(--leading-normal);
-  }
-  .font-extrabold {
-    --tw-font-weight: var(--font-weight-extrabold);
-    font-weight: var(--font-weight-extrabold);
   }
   .font-extralight {
     --tw-font-weight: var(--font-weight-extralight);
@@ -989,6 +981,9 @@
     .lg\:mr-16 {
       margin-right: calc(var(--spacing) * 16);
     }
+    .lg\:mb-0 {
+      margin-bottom: 0px;
+    }
     .lg\:mb-8 {
       margin-bottom: calc(var(--spacing) * 8);
     }
@@ -1025,8 +1020,8 @@
     .lg\:w-77\.5 {
       width: calc(var(--spacing) * 77.5);
     }
-    .lg\:w-112\.5 {
-      width: calc(var(--spacing) * 112.5);
+    .lg\:w-119\.25 {
+      width: calc(var(--spacing) * 119.25);
     }
     .lg\:w-full {
       width: 100%;
@@ -1127,15 +1122,16 @@
       border-top-left-radius: 48px;
       border-top-right-radius: 48px;
     }
+    .lg\:rounded-b-\[48px\] {
+      border-bottom-right-radius: 48px;
+      border-bottom-left-radius: 48px;
+    }
     .lg\:border-l {
       border-left-style: var(--tw-border-style);
       border-left-width: 1px;
     }
     .lg\:border-\[\#1C3241\]\/20 {
       border-color: color-mix(in oklab, #1C3241 20%, transparent);
-    }
-    .lg\:px-0 {
-      padding-inline: 0px;
     }
     .lg\:py-6 {
       padding-block: calc(var(--spacing) * 6);
