@@ -5,7 +5,7 @@ const line2 = document.getElementById('line2');
 const line3 = document.getElementById('line3');
 
 const menuClosed = ['opacity-0', 'max-h-0', 'pointer-events-none'];
-const menuOpen = ['opacity-100', 'max-h-[700px]', 'pointer-events-auto'];
+const menuOpen = ['opacity-100', 'max-h-dvh', 'pointer-events-auto'];
 const line1Closed = ['w-4'];
 const line1Open = ['w-full', 'translate-y-[9px]', 'rotate-45'];
 const line3Closed = ['w-4'];
